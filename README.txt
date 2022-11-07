@@ -7,7 +7,6 @@ things to change:
 
 Package structure and class names
 Set up resources folder
-resources/META-INF/mods.toml: Set mod ID on line 18, then edit anything you like.
 build.gradle: Replace all occurrences of emptymod with your mod ID
 build.gradle: replace "group" with your package name
 pack.mcmeta

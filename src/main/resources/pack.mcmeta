@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "Mod resources for [your mod's name here]",
+        "description": "Mod resources for Engineer's Construct",
         "pack_format": 9,
         "forge:resource_pack_format": 8,
         "forge:data_pack_format": 9

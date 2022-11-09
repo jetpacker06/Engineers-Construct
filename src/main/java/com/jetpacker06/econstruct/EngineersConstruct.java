@@ -1,9 +1,11 @@
 package com.jetpacker06.econstruct;
 
+import com.jetpacker06.econstruct.register.AllBlocks;
+import com.jetpacker06.econstruct.register.AllFluids;
+import com.jetpacker06.econstruct.register.AllItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,8 +16,9 @@ public class EngineersConstruct {
 
     public EngineersConstruct() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModBlocks.register(eventBus);
-        ModItems.register(eventBus);
+        AllBlocks.BLOCKS.register(eventBus);
+        AllItems.ITEMS.register(eventBus);
+        AllFluids.FLUIDS.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }

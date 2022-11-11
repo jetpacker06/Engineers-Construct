@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "econstruct:andesite_alloy_nugget"
+        }
+    },
+    "result": {
+        "item": "create:andesite_alloy",
+        "count": 1
+    }
+}

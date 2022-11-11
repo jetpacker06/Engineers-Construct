@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "tconstruct:smeltery_controller",
+    "tconstruct:seared_chute",
+    "tconstruct:seared_duct",
+    "tconstruct:seared_drain",
+    "tconstruct:seared_basin",
+    "tconstruct:seared_table",
+    "tconstruct:seared_heater",
+    "tconstruct:seared_faucet",
+    "tconstruct:seared_channel",
+    "tconstruct:seared_fuel_tank",
+    "tconstruct:seared_fuel_gauge",
+    "tconstruct:seared_ingot_tank",
+    "tconstruct:seared_gauge",
+    "tconstruct:seared_melter",
+
+    "tconstruct:foundry_controller",
+    "tconstruct:scorched_chute",
+    "tconstruct:scorched_duct",
+    "tconstruct:scorched_drain",
+    "tconstruct:scorched_basin",
+    "tconstruct:scorched_table",
+    "tconstruct:scorched_alloyer",
+    "tconstruct:scorched_faucet",
+    "tconstruct:scorched_channel",
+    "tconstruct:scorched_fuel_tank",
+    "tconstruct:scorched_fuel_gauge",
+    "tconstruct:scorched_ingot_tank",
+    "tconstruct:scorched_gauge"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:crushed_platinum_ore"
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_platinum"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

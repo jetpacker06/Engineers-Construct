@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "econstruct:andesite_alloy_nugget"
+  },
+  "result": {
+    "amount": 10,
+    "fluid": "econstruct:molten_andesite_alloy"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

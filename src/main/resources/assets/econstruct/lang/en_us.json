@@ -1,0 +1,10 @@
+{
+  "itemGroup.Engineer's Construct": "Engineer's Construct",
+  "item.econstruct.andesite_alloy_nugget": "Andesite Alloy Nugget",
+
+  "block.econstruct.andesite_alloy_block": "Block of Andesite Alloy",
+  "block.econstruct.chocolate_block": "Block of Chocolate",
+
+  "fluid.econstruct.molten_andesite": "Molten Andesite",
+  "fluid.econstruct.molten_andesite_alloy": "Molten Andesite Alloy"
+}

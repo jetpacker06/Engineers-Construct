@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:portable_fluid_interface"
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_copper"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

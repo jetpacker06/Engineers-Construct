@@ -1,0 +1,13 @@
+{
+  "cast": {
+    "item": "minecraft:sweet_berries"
+  },
+  "cast_consumed": true,
+  "cooling_time": 20,
+  "fluid": {
+    "amount": 250,
+    "name": "econstruct:molten_andesite_alloy"
+  },
+  "result": "create:chocolate_glazed_berries",
+  "type": "tconstruct:casting_table"
+}

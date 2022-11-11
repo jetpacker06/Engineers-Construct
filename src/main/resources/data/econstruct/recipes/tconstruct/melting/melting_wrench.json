@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:wrench"
+  },
+  "result": {
+    "amount": 270,
+    "fluid": "tconstruct:molten_gold"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

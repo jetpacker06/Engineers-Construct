@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:schematicannon"
+  },
+  "result": {
+    "amount": 1620,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "temperature": 1000,
+  "time": 1125,
+  "type": "tconstruct:melting"
+}

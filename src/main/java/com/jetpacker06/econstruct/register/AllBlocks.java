@@ -5,6 +5,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,9 +23,12 @@ public class AllBlocks {
         registerBlockItem(name, toReturn, tab);
         return toReturn;
     }
-    private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return AllItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
+        AllItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
-
-    //public static final RegistryObject<Block> BLOCK = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT)), CreativeModeTab.TAB_MISC);
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
+    public static final RegistryObject<Block> ANDESITE_ALLOY_BLOCK = registerBlock("andesite_alloy_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ItemGroups.ENGINEERS_CONSTRUCT);
+    public static final RegistryObject<Block> CHOCOLATE_BLOCK = registerBlock("chocolate_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.SLIME_BLOCK)), ItemGroups.ENGINEERS_CONSTRUCT);
 }

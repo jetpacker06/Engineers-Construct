@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:filter"
+  },
+  "result": {
+    "amount": 20,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

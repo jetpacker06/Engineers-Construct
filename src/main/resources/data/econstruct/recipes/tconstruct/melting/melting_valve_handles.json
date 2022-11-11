@@ -1,0 +1,18 @@
+{
+  "byproducts": [
+    {
+      "amount": 90,
+      "fluid": "econstruct:molten_andesite_alloy"
+    }
+  ],
+  "ingredient": {
+    "tag": "create:valve_handles"
+  },
+  "result": {
+    "amount": 270,
+    "fluid": "tconstruct:molten_copper"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

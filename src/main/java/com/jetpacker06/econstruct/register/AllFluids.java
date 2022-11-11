@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Material;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,4 +39,8 @@ public class AllFluids {
     public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(MOLTEN_ANDESITE_ALLOY, MOLTEN_ANDESITE_ALLOY_FLOWING, FluidAttributes.Water.builder(STILL, FLOWING)
             .temperature(300).sound(SoundEvents.BOTTLE_FILL).overlay(OVERLAY).density(2).color(0xffffffff).luminosity(2).viscosity(5))
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(AllFluids.MOLTEN_ANDESITE_ALLOY_LIQUID_BLOCK);
+
+    public static void register(IEventBus eventBus) {
+        FLUIDS.register(eventBus);
+    }
 }

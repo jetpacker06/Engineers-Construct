@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:radial_chassis"
+  },
+  "result": {
+    "amount": 60.0,
+    "fluid": "econstruct:molten_andesite_alloy"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

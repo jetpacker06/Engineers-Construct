@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:bar_of_chocolate"
+  },
+  "result": {
+    "amount": 250,
+    "fluid": "create:chocolate"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

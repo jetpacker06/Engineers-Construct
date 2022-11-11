@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:andesite_tunnel"
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "econstruct:molten_andesite_alloy"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

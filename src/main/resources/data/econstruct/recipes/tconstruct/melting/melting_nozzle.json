@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:nozzle"
+  },
+  "result": {
+    "amount": 360,
+    "fluid": "econstruct:molten_andesite_alloy"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:andesite_funnel"
+  },
+  "result": {
+    "amount": 45,
+    "fluid": "econstruct:molten_andesite_alloy"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

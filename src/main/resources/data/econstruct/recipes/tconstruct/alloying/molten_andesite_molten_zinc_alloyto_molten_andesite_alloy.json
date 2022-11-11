@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    {
+      "amount": 100,
+      "name": "econstruct:molten_andesite"
+    },
+    {
+      "amount": 10,
+      "name": "tconstruct:molten_zinc"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "fluid": "econstruct:molten_andesite_alloy"
+  },
+  "temperature": 1000,
+  "type": "tconstruct:alloy"
+}

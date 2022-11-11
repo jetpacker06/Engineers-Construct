@@ -1,0 +1,10 @@
+{
+  "cast_consumed": false,
+  "cooling_time": 140,
+  "fluid": {
+    "amount": 810,
+    "name": "econstruct:molten_andesite_alloy"
+  },
+  "result": "econstruct:andesite_alloy_block",
+  "type": "tconstruct:casting_basin"
+}

@@ -16,9 +16,9 @@ public class EngineersConstruct {
 
     public EngineersConstruct() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        AllBlocks.BLOCKS.register(eventBus);
-        AllItems.ITEMS.register(eventBus);
-        AllFluids.FLUIDS.register(eventBus);
+        AllBlocks.register(eventBus);
+        AllItems.register(eventBus);
+        AllFluids.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }

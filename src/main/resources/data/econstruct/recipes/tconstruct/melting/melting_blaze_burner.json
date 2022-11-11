@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:blaze_burner"
+  },
+  "result": {
+    "amount": 360,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

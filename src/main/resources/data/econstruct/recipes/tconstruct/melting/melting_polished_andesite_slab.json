@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "minecraft:polished_andesite_slab"
+  },
+  "result": {
+    "amount": 50,
+    "fluid": "econstruct:molten_andesite"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

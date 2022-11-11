@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "create:flywheel"
+  },
+  "result": {
+    "amount": 720,
+    "fluid": "tconstruct:molten_brass"
+  },
+  "temperature": 1000,
+  "time": 675,
+  "type": "tconstruct:melting"
+}

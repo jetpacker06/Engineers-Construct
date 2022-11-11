@@ -1,0 +1,18 @@
+{
+  "byproducts": [
+    {
+      "amount": 180,
+      "fluid": "econstruct:molten_andesite_alloy"
+    }
+  ],
+  "ingredient": {
+    "item": "create:minecart_coupling"
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

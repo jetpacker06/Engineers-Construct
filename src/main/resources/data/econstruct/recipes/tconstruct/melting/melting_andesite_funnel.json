@@ -3,7 +3,7 @@
     "item": "create:andesite_funnel"
   },
   "result": {
-    "amount": 45,
+    "amount": 45.0,
     "fluid": "econstruct:molten_andesite_alloy"
   },
   "temperature": 1000,

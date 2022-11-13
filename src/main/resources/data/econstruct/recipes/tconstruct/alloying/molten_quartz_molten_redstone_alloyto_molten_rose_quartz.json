@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    {
+      "amount": 100,
+      "name": "tconstruct:molten_quartz"
+    },
+    {
+      "amount": 400,
+      "name": "econstruct:molten_redstone"
+    }
+  ],
+  "result": {
+    "amount": 100,
+    "fluid": "econstruct:molten_rose_quartz"
+  },
+  "temperature": 1000,
+  "type": "tconstruct:alloy"
+}

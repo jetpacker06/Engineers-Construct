@@ -1,4 +1,10 @@
 {
+  "byproducts": [
+    {
+      "amount": 100,
+      "fluid": "econstruct:molten_rose_quartz"
+    }
+  ],
   "ingredient": {
     "item": "create:electron_tube"
   },

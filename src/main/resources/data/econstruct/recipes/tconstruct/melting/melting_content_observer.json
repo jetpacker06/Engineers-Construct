@@ -1,16 +1,16 @@
 {
   "byproducts": [
     {
-      "amount": 45.0,
-      "fluid": "econstruct:molten_andesite_alloy"
+      "amount": 100,
+      "fluid": "econstruct:molten_rose_quartz"
     }
   ],
   "ingredient": {
-    "item": "create:display_board"
+    "item": "create:content_observer"
   },
   "result": {
     "amount": 90,
-    "fluid": "econstruct:molten_andesite_alloy"
+    "fluid": "tconstruct:molten_brass"
   },
   "temperature": 1000,
   "time": 240,

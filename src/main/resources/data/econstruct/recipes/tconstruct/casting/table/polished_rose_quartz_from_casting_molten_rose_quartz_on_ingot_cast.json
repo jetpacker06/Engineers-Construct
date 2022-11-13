@@ -1,0 +1,13 @@
+{
+  "cast": {
+    "item": "tconstruct:ingot_cast"
+  },
+  "cast_consumed": false,
+  "cooling_time": 30,
+  "fluid": {
+    "amount": 100,
+    "name": "econstruct:molten_rose_quartz"
+  },
+  "result": "create:polished_rose_quartz",
+  "type": "tconstruct:casting_table"
+}

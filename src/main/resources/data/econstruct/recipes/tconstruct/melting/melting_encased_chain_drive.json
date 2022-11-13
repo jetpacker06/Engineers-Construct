@@ -1,16 +1,16 @@
 {
   "byproducts": [
     {
-      "amount": 45.0,
+      "amount": 90,
       "fluid": "econstruct:molten_andesite_alloy"
     }
   ],
   "ingredient": {
-    "item": "create:display_board"
+    "item": "create:encased_chain_drive"
   },
   "result": {
-    "amount": 90,
-    "fluid": "econstruct:molten_andesite_alloy"
+    "amount": 30,
+    "fluid": "tconstruct:molten_iron"
   },
   "temperature": 1000,
   "time": 240,

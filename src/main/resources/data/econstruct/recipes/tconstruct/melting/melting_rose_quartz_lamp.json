@@ -1,4 +1,14 @@
 {
+  "byproducts": [
+    {
+      "amount": 100,
+      "fluid": "econstruct:molten_rose_quartz"
+    },
+    {
+      "amount": 50,
+      "fluid": "econstruct:molten_redstone"
+    }
+  ],
   "ingredient": {
     "item": "create:rose_quartz_lamp"
   },

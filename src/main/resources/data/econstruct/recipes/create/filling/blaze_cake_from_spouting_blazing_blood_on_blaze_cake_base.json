@@ -1,0 +1,18 @@
+{
+  "ingredients": [
+    {
+      "item": "create:blaze_cake_base"
+    },
+    {
+      "amount": 50,
+      "fluid": "tconstruct:blazing_blood",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "create:blaze_cake"
+    }
+  ],
+  "type": "create:filling"
+}

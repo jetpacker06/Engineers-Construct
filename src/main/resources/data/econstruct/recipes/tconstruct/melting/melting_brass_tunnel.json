@@ -1,4 +1,10 @@
 {
+  "byproducts": [
+    {
+      "amount": 50.0,
+      "fluid": "econstruct:molten_rose_quartz"
+    }
+  ],
   "ingredient": {
     "item": "create:brass_tunnel"
   },

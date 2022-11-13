@@ -1,4 +1,14 @@
 {
+  "byproducts": [
+    {
+      "amount": 90,
+      "fluid": "econstruct:molten_andesite_alloy"
+    },
+    {
+      "amount": 100,
+      "fluid": "econstruct:molten_rose_quartz"
+    }
+  ],
   "ingredient": {
     "item": "create:deployer"
   },

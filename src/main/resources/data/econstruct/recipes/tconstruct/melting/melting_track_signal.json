@@ -1,10 +1,10 @@
 {
   "ingredient": {
-    "item": "create:copper_tiles"
+    "item": "create:track_signal"
   },
   "result": {
-    "amount": 45.0,
-    "fluid": "tconstruct:molten_copper"
+    "amount": 25.0,
+    "fluid": "econstruct:molten_rose_quartz"
   },
   "temperature": 1000,
   "time": 240,

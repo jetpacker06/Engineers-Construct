@@ -1,16 +1,20 @@
 {
   "byproducts": [
     {
+      "amount": 90,
+      "fluid": "econstruct:molten_andesite_alloy"
+    },
+    {
       "amount": 100,
       "fluid": "econstruct:molten_rose_quartz"
     }
   ],
   "ingredient": {
-    "item": "create:smart_fluid_pipe"
+    "item": "create:adjustable_chain_gearshift"
   },
   "result": {
-    "amount": 90,
-    "fluid": "tconstruct:molten_brass"
+    "amount": 30,
+    "fluid": "tconstruct:molten_iron"
   },
   "temperature": 1000,
   "time": 240,

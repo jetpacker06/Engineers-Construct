@@ -3,7 +3,7 @@
     "item": "create:white_sail"
   },
   "result": {
-    "amount": 45,
+    "amount": 45.0,
     "fluid": "econstruct:molten_andesite_alloy"
   },
   "temperature": 1000,

@@ -1,10 +1,10 @@
 {
   "ingredient": {
-    "item": "create:copper_tiles"
+    "item": "create:rose_quartz"
   },
   "result": {
-    "amount": 45.0,
-    "fluid": "tconstruct:molten_copper"
+    "amount": 100,
+    "fluid": "econstruct:molten_rose_quartz"
   },
   "temperature": 1000,
   "time": 240,

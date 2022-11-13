@@ -3,7 +3,7 @@
     "item": "create:brass_ladder"
   },
   "result": {
-    "amount": 45,
+    "amount": 45.0,
     "fluid": "tconstruct:molten_brass"
   },
   "temperature": 1000,

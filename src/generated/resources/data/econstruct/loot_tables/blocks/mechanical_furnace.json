@@ -2,12 +2,12 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "econstruct:andesite_alloy_block"
+          "name": "econstruct:mechanical_furnace"
         }
       ],
       "conditions": [

@@ -1,8 +1,12 @@
 package com.jetpacker06.econstruct;
 
-import com.jetpacker06.econstruct.register.AllBlocks;
 import com.jetpacker06.econstruct.register.AllFluids;
 import com.jetpacker06.econstruct.register.AllItems;
+import com.jetpacker06.econstruct.registrate.AllBlocks;
+import com.jetpacker06.econstruct.registrate.AllTileEntities;
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.tterrag.registrate.Registrate;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,12 +20,20 @@ import org.apache.logging.log4j.Logger;
 public class EngineersConstruct {
     public static final String MOD_ID = "econstruct";
     public static final Logger LOGGER = LogManager.getLogger();
+    public static Registrate REGISTRATE;
+    private static final NonNullSupplier<CreateRegistrate> createRegistrate = CreateRegistrate.lazy(MOD_ID);
+    public static CreateRegistrate registrate() {
+        return createRegistrate.get();
+    }
 
     public EngineersConstruct() {
+        REGISTRATE = Registrate.create(EngineersConstruct.MOD_ID);
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        AllBlocks.register(eventBus);
+
         AllItems.register(eventBus);
         AllFluids.register(eventBus);
+        AllBlocks.registerBasic(REGISTRATE);
+        AllTileEntities.register();
         eventBus.addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }

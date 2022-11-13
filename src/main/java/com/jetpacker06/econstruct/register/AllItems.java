@@ -11,11 +11,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class AllItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EngineersConstruct.MOD_ID);
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EngineersConstruct.MOD_ID);
+
     public static RegistryObject<Item> ingredient(String name) {
         return ITEMS.register(name, () -> new Item(new Item.Properties().tab(ItemGroups.ENGINEERS_CONSTRUCT)));
     }

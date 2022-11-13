@@ -37,6 +37,12 @@ description='''
 A compat content mod for Create and Tinker's Construct.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.econstruct]]
+modId="create"
+mandatory=true
+versionRange="[0.5.0.e,)"
+ordering="NONE"
+side="BOTH"
 [[dependencies.examplemod]] #optional
     # the modid of the dependency
     modId="forge" #mandatory

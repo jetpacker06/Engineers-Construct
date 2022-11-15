@@ -16,9 +16,9 @@ public class MechanicalFurnaceTileEntity extends KineticTileEntity {
     @Override
     public void tick() {
         super.tick();
-        if (new Random().nextBoolean() & new Random().nextBoolean() & new Random().nextBoolean()) {
-            System.out.println("Its alive! " + this.ticks);
-        }
-        this.ticks++;
+      //  if (new Random().nextBoolean() & new Random().nextBoolean() & new Random().nextBoolean()) {
+      //      System.out.println("Its alive! " + this.ticks);
+      //  }
+      //  this.ticks++;
     }
 }

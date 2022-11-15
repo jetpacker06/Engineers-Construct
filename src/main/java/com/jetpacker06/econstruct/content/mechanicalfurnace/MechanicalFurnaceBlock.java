@@ -39,13 +39,19 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IT
 
     @Override
     public boolean hasShaftTowards(LevelReader world, BlockPos pos, BlockState state, Direction face) {
-        return face == state.getValue(HORIZONTAL_FACING).getOpposite();
+        if (state.getValue(HORIZONTAL_FACING) == Direction.EAST || state.getValue(HORIZONTAL_FACING) == Direction.WEST) {
+            return face == Direction.EAST || face == Direction.WEST;
+        }
+
+        return face == Direction.NORTH || face == Direction.SOUTH;
     }
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction preferred = getPreferredHorizontalFacing(context);
-        if (preferred != null)
-            return defaultBlockState().setValue(HORIZONTAL_FACING, preferred.getOpposite());
-        return this.defaultBlockState().setValue(HORIZONTAL_FACING, context.getHorizontalDirection().getOpposite());
+        if (preferred != null) {
+            return defaultBlockState().setValue(HORIZONTAL_FACING, preferred.getOpposite().getClockWise());
+        }
+        return this.defaultBlockState().setValue(HORIZONTAL_FACING, context.getHorizontalDirection());
     }
 }

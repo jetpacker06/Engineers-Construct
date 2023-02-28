@@ -1,3 +1,17 @@
 {
-  "block.econstruct.mechanical_furnace": "Mechanical Furnace"
+  "block.econstruct.andesite_alloy_block": "Block of Andesite Alloy",
+  "block.econstruct.chocolate_block": "Block of Chocolate",
+  "block.econstruct.fuel1": "Fuel1",
+  "block.econstruct.fuel2": "Fuel2",
+  "block.econstruct.molten_andesite": "Molten Andesite",
+  "block.econstruct.molten_andesite_alloy": "Molten Andesite Alloy",
+  "block.econstruct.molten_redstone": "Molten Redstone",
+  "block.econstruct.molten_rose_quartz": "Molten Rose Quartz",
+  "item.econstruct.andesite_alloy_nugget": "Andesite Alloy Nugget",
+  "item.econstruct.fuel1_bucket": "Fuel 1 Bucket",
+  "item.econstruct.fuel2_bucket": "Fuel 2 Bucket",
+  "item.econstruct.molten_andesite_alloy_bucket": "Molten Andesite Alloy Bucket",
+  "item.econstruct.molten_andesite_bucket": "Molten Andesite Bucket",
+  "item.econstruct.molten_redstone_bucket": "Molten Redstone Bucket",
+  "item.econstruct.molten_rose_quartz_bucket": "Molten Rose Quartz Bucket"
 }

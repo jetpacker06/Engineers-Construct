@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.NotNull;
 
+
 public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements ITE<MechanicalFurnaceTileEntity> {
     public MechanicalFurnaceBlock(Properties properties) {
         super(properties);
@@ -50,7 +51,7 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IT
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction preferred = getPreferredHorizontalFacing(context);
         if (preferred != null) {
-            return defaultBlockState().setValue(HORIZONTAL_FACING, preferred.getOpposite().getClockWise());
+            return defaultBlockState().setValue(HORIZONTAL_FACING, preferred.getOpposite());
         }
         return this.defaultBlockState().setValue(HORIZONTAL_FACING, context.getHorizontalDirection());
     }

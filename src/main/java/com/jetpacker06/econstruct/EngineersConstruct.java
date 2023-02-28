@@ -35,6 +35,6 @@ public class EngineersConstruct {
         MinecraftForge.EVENT_BUS.register(this);
     }
     public void clientSetup(FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(AllBlocks.MECHANICAL_FURNACE.get(), RenderType.cutout());
+        return;//   ItemBlockRenderTypes.setRenderLayer(AllBlocks.MECHANICAL_FURNACE.get(), RenderType.cutout());
     }
 }

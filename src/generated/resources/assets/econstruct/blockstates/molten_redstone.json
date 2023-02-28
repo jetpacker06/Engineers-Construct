@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "econstruct:block/molten_redstone"
+    }
+  }
+}

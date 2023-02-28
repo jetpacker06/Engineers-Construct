@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "econstruct:flowing_molten_andesite",
+    "econstruct:molten_andesite",
+    "econstruct:flowing_molten_andesite_alloy",
+    "econstruct:molten_andesite_alloy",
+    "econstruct:flowing_molten_redstone",
+    "econstruct:molten_redstone",
+    "econstruct:flowing_molten_rose_quartz",
+    "econstruct:molten_rose_quartz",
+    "econstruct:flowing_fuel1",
+    "econstruct:fuel1",
+    "econstruct:flowing_fuel2",
+    "econstruct:fuel2"
+  ]
+}

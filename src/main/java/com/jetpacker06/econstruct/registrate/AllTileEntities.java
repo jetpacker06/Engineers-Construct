@@ -12,8 +12,11 @@ public class AllTileEntities {
     public static final BlockEntityEntry<MechanicalFurnaceTileEntity> MECHANICAL_FURNACE = REGISTRATE
             .tileEntity("mechanical_furnace_tile_entity", MechanicalFurnaceTileEntity::new)
             .instance(() -> ShaftInstance::new)
-            .validBlocks(AllBlocks.MECHANICAL_FURNACE)
+            .validBlocks(AllBlocks.SEARED_MECHANICAL_FURNACE)
             .register();
 
+    /**
+     * Necessary because of lazy classloading.
+     */
     public static void register() {}
 }

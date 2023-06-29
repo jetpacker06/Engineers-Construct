@@ -3,7 +3,7 @@ package com.jetpacker06.econstruct.registrate;
 import com.jetpacker06.econstruct.EngineersConstruct;
 import com.jetpacker06.econstruct.content.mechanicalfurnace.MechanicalFurnaceBlock;
 import com.jetpacker06.econstruct.content.Tab;
-import com.simibubi.create.foundation.block.BlockStressDefaults;
+import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.Registrate;
@@ -13,15 +13,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AllBlocks {
 
-    public static BlockEntry<Block> ANDESITE_ALLOY_BLOCK;
     public static BlockEntry<Block> CHOCOLATE_BLOCK;
 
     public static void registerBasicBlocks(Registrate registrate) {
         registrate.creativeModeTab(() -> Tab.ENGINEERS_CONSTRUCT);
-        ANDESITE_ALLOY_BLOCK = registrate.block("andesite_alloy_block", Block::new)
-                .simpleItem()
-                .lang("Block of Andesite Alloy")
-                .register();
         CHOCOLATE_BLOCK = registrate.block("chocolate_block", Block::new)
                 .simpleItem()
                 .lang("Block of Chocolate")

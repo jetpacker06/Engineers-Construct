@@ -1,17 +1,4 @@
 {
-  "block.econstruct.andesite_alloy_block": "\u028Eo\u05DF\u05DF\u2C6F \u01DD\u0287\u0131s\u01DDpu\u2C6F \u025Fo \u029E\u0254o\u05DF\u15FA",
-  "block.econstruct.chocolate_block": "\u01DD\u0287\u0250\u05DFo\u0254o\u0265\u0186 \u025Fo \u029E\u0254o\u05DF\u15FA",
-  "block.econstruct.fuel1": "\u0196\u05DF\u01DDn\u2132",
-  "block.econstruct.fuel2": "\u1105\u05DF\u01DDn\u2132",
-  "block.econstruct.molten_andesite": "\u01DD\u0287\u0131s\u01DDpu\u2C6F u\u01DD\u0287\u05DFoW",
-  "block.econstruct.molten_andesite_alloy": "\u028Eo\u05DF\u05DF\u2C6F \u01DD\u0287\u0131s\u01DDpu\u2C6F u\u01DD\u0287\u05DFoW",
-  "block.econstruct.molten_redstone": "\u01DDuo\u0287sp\u01DD\u1D1A u\u01DD\u0287\u05DFoW",
-  "block.econstruct.molten_rose_quartz": "z\u0287\u0279\u0250n\u1F49 \u01DDso\u1D1A u\u01DD\u0287\u05DFoW",
-  "item.econstruct.andesite_alloy_nugget": "\u0287\u01DDbbnN \u028Eo\u05DF\u05DF\u2C6F \u01DD\u0287\u0131s\u01DDpu\u2C6F",
-  "item.econstruct.fuel1_bucket": "\u0287\u01DD\u029E\u0254n\u15FA \u0196 \u05DF\u01DDn\u2132",
-  "item.econstruct.fuel2_bucket": "\u0287\u01DD\u029E\u0254n\u15FA \u1105 \u05DF\u01DDn\u2132",
-  "item.econstruct.molten_andesite_alloy_bucket": "\u0287\u01DD\u029E\u0254n\u15FA \u028Eo\u05DF\u05DF\u2C6F \u01DD\u0287\u0131s\u01DDpu\u2C6F u\u01DD\u0287\u05DFoW",
-  "item.econstruct.molten_andesite_bucket": "\u0287\u01DD\u029E\u0254n\u15FA \u01DD\u0287\u0131s\u01DDpu\u2C6F u\u01DD\u0287\u05DFoW",
-  "item.econstruct.molten_redstone_bucket": "\u0287\u01DD\u029E\u0254n\u15FA \u01DDuo\u0287sp\u01DD\u1D1A u\u01DD\u0287\u05DFoW",
-  "item.econstruct.molten_rose_quartz_bucket": "\u0287\u01DD\u029E\u0254n\u15FA z\u0287\u0279\u0250n\u1F49 \u01DDso\u1D1A u\u01DD\u0287\u05DFoW"
+  "block.econstruct.scorched_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0265\u0254\u0279o\u0254S",
+  "block.econstruct.seared_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0279\u0250\u01DDS"
 }

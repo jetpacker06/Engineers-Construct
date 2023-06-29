@@ -15,10 +15,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("econstruct")
+@Mod(EngineersConstruct.MOD_ID)
 public class EngineersConstruct {
     public static final String MOD_ID = "econstruct";
-    private static final NonNullSupplier<CreateRegistrate> createRegistrate = CreateRegistrate.lazy(MOD_ID);
+    private static final NonNullSupplier<CreateRegistrate> createRegistrate = NonNullSupplier
+            .lazy(() -> CreateRegistrate.create(MOD_ID).registerEventListeners(FMLJavaModLoadingContext.get()
+                    .getModEventBus()));
     public static CreateRegistrate registrate() {
         return createRegistrate.get();
     }

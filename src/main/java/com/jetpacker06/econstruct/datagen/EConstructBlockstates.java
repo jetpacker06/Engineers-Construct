@@ -11,5 +11,6 @@ public class EConstructBlockstates extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
     }
 }

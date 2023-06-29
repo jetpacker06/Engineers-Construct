@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 public class Tab {
-    public static final CreativeModeTab ENGINEERS_CONSTRUCT = new CreativeModeTab("Engineer's Construct") {
+    public static final CreativeModeTab ENGINEERS_CONSTRUCT = new CreativeModeTab("econstruct") {
         @Override
         public @NotNull ItemStack makeIcon() {
             return new ItemStack(AllItems.ANDESITE_ALLOY_NUGGET.get());

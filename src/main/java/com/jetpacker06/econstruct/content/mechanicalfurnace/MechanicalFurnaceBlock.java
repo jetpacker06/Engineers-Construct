@@ -1,26 +1,25 @@
 package com.jetpacker06.econstruct.content.mechanicalfurnace;
 
 import com.jetpacker06.econstruct.registrate.AllTileEntities;
-import com.simibubi.create.content.contraptions.base.HorizontalKineticBlock;
-import com.simibubi.create.foundation.block.ITE;
+import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
+import com.simibubi.create.foundation.block.IBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import org.jetbrains.annotations.NotNull;
+import slimeknights.mantle.util.BlockEntityHelper;
 
 
-public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements ITE<MechanicalFurnaceTileEntity> {
+public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IBE<MechanicalFurnaceTileEntity> {
+    public static final BooleanProperty IN_STRUCTURE = BooleanProperty.create("in_structure");
+
     public MechanicalFurnaceBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    public @NotNull PushReaction getPistonPushReaction(@NotNull BlockState pState) {
-        return PushReaction.NORMAL;
     }
 
     @Override
@@ -29,12 +28,12 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IT
     }
 
     @Override
-    public Class<MechanicalFurnaceTileEntity> getTileEntityClass() {
+    public Class<MechanicalFurnaceTileEntity> getBlockEntityClass() {
         return MechanicalFurnaceTileEntity.class;
     }
 
     @Override
-    public BlockEntityType<? extends MechanicalFurnaceTileEntity> getTileEntityType() {
+    public BlockEntityType<? extends MechanicalFurnaceTileEntity> getBlockEntityType() {
        return AllTileEntities.MECHANICAL_FURNACE.get();
     }
 
@@ -54,5 +53,15 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IT
             return defaultBlockState().setValue(HORIZONTAL_FACING, preferred.getOpposite());
         }
         return this.defaultBlockState().setValue(HORIZONTAL_FACING, context.getHorizontalDirection());
+    }
+
+    // from SlimeKnights
+    @Override
+    @SuppressWarnings("deprecation")
+    public void onRemove(@NotNull BlockState state, @NotNull Level worldIn, @NotNull BlockPos pos, BlockState newState, boolean isMoving) {
+        if (!newState.is(this)) {
+            BlockEntityHelper.get(MechanicalFurnaceTileEntity.class, worldIn, pos).ifPresent(te -> te.notifyMasterOfChange(pos, newState));
+        }
+        super.onRemove(state, worldIn, pos, newState, isMoving);
     }
 }

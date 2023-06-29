@@ -1,6 +1,5 @@
 package com.jetpacker06.econstruct.datagen;
 
-import com.jetpacker06.econstruct.content.Tab;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.FluidEntry;
 import com.tterrag.registrate.util.entry.ItemEntry;
@@ -26,11 +25,9 @@ public class EConstructLang extends LanguageProvider {
     protected void addTranslations() {
         this.add("block.econstruct.fuel1", "Powered by Mechanical Furnace");
         this.add("block.econstruct.fuel2", "Powered by Mechanical Furnace");
-
-        this.add(Tab.ENGINEERS_CONSTRUCT, "Engineer's Construct");
+        this.add("itemGroup.econstruct", "Engineer's Construct");
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
-        this.add(ANDESITE_ALLOY_BLOCK, "Block of Andesite Alloy");
         this.add(SEARED_MECHANICAL_FURNACE, "Seared Mechanical Furnace");
         this.add(SCORCHED_MECHANICAL_FURNACE, "Scorched Mechanical Furnace");
 

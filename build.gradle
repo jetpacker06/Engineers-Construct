@@ -22,18 +22,6 @@ group = 'com.jetpacker06.econstruct'
 archivesBaseName = 'econstruct'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
-repositories {
-    maven {
-        // location of the maven that hosts JEI files
-        name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
-    }
-    maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
-        url = "https://modmaven.dev"
-    }
-}
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
@@ -93,10 +81,31 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     mavenLocal()
 
+    // JEI
+    maven {
+        // location of the maven that hosts JEI files before January 2023
+        // Also Tinker's Construct maven
+        name = "Progwml6's maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+
+    // Create, Flywheel, Registrate
     maven {
         name = 'tterrag maven'
         url = 'https://maven.tterrag.com/'
     }
+
+    // Other mods for workspace
     maven {
         url "https://www.cursemaven.com"
         content {
@@ -105,26 +114,34 @@ repositories {
     }
 }
 dependencies {
-    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
+    // Create, Flywheel, Registrate
+    implementation fg.deobf("com.simibubi.create:create-${mc_version}:${create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${mc_version}:${flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    implementation fg.deobf("curse.maven:createaddition-439890:${createaddition_version}")
+    // Create Crafts and Additions
+    if (createaddition_enabled.toLowerCase() == "true") {
+        implementation fg.deobf("curse.maven:createaddition-439890:${createaddition_version}")
+    }
+    // Mantle and TConstruct
+    implementation fg.deobf("slimeknights.mantle:Mantle:${mc_version}-${mantle_version}")
+    implementation fg.deobf("slimeknights.tconstruct:TConstruct:${mc_version}-${tinkers_version}")
 
-    implementation fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
-    implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
+    // JEI
+    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
+    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
+    runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 
-    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
 
+    // mixin thing
     annotationProcessor "org.spongepowered:mixin:0.8.3:processor"
     testAnnotationProcessor "org.spongepowered:mixin:0.8.3:processor"
 
+    // a TConstruct library
     compileOnly 'org.projectlombok:lombok:1.18.26'
     annotationProcessor 'org.projectlombok:lombok:1.18.26'
-
     testCompileOnly 'org.projectlombok:lombok:1.18.26'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
 }

@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "minecraft:redstone_repeater"
+    "item": "minecraft:repeater"
   },
   "result": {
     "amount": 150,

@@ -1,5 +1,7 @@
 package com.jetpacker06.econstruct.datagen;
 
+import com.jetpacker06.econstruct.EngineersConstruct;
+import com.jetpacker06.econstruct.registrate.AllFluids;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.FluidEntry;
 import com.tterrag.registrate.util.entry.ItemEntry;
@@ -23,8 +25,6 @@ public class EConstructLang extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        this.add("block.econstruct.fuel1", "Powered by Mechanical Furnace");
-        this.add("block.econstruct.fuel2", "Powered by Mechanical Furnace");
         this.add("itemGroup.econstruct", "Engineer's Construct");
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
@@ -43,20 +43,26 @@ public class EConstructLang extends LanguageProvider {
         this.add(MOLTEN_ANDESITE_ALLOY, "Molten Andesite Alloy");
         this.add(MOLTEN_REDSTONE, "Molten Redstone");
         this.add(MOLTEN_ROSE_QUARTZ, "Molten Rose Quartz");
+        this.add(FUEL1, "Powered by Mechanical Furnace");
+        this.add(FUEL2, "Powered by Mechanical Furnace");
     }
 
     public <T extends Block> void add(@NotNull BlockEntry<T> entry, @NotNull String name) {
         this.add(entry.get(), name);
     }
+
     public <T extends Item> void add(@NotNull ItemEntry<T> entry, @NotNull String name) {
         this.add(entry.get(), name);
     }
+
     public <T extends ForgeFlowingFluid.Flowing> void add(@NotNull FluidEntry<T> entry, @NotNull String name) {
-        this.add(entry.get(), name);
+        this.add("block." + entry.getId().toString().replace(":flowing_", "."), name);
     }
+
     public <T extends CreativeModeTab> void add(@NotNull T tab, String name) {
         this.add(((TranslatableComponent) tab.getDisplayName()).getKey(), name);
     }
+
     public void add(@NotNull ForgeFlowingFluid.Flowing fluid, @NotNull String name) {
         assert fluid.getRegistryName() != null;
         String fluidName = fluid.getRegistryName().toString();

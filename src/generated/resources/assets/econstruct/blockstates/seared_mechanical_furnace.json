@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "econstruct:block/seared_mechanical_furnace"
+    },
+    "facing=south": {
+      "model": "econstruct:block/seared_mechanical_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "econstruct:block/seared_mechanical_furnace",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "econstruct:block/seared_mechanical_furnace",
+      "y": 90
     }
   }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "econstruct:block/scorched_mechanical_furnace",
+  "textures": {
+    "particle": "tconstruct:block/smeltery/seared/bricks"
+  }
+}

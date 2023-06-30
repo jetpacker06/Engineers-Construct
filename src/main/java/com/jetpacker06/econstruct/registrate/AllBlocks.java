@@ -4,8 +4,7 @@ import com.jetpacker06.econstruct.EngineersConstruct;
 import com.jetpacker06.econstruct.content.mechanicalfurnace.MechanicalFurnaceBlock;
 import com.jetpacker06.econstruct.content.Tab;
 import com.simibubi.create.content.kinetics.BlockStressDefaults;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.data.SharedProperties;
+import com.simibubi.create.foundation.data.*;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.world.level.block.Block;
@@ -29,6 +28,7 @@ public class AllBlocks {
             .properties(BlockBehaviour.Properties::noOcclusion)
             .lang("Seared Mechanical Furnace")
             .transform(BlockStressDefaults.setImpact(64))
+            .blockstate(BlockStateGen.horizontalBlockProvider(false))
             .simpleItem()
             .register();
     public static final BlockEntry<MechanicalFurnaceBlock> SCORCHED_MECHANICAL_FURNACE = REGISTRATE.block("scorched_mechanical_furnace", MechanicalFurnaceBlock::new)
@@ -36,6 +36,7 @@ public class AllBlocks {
             .properties(BlockBehaviour.Properties::noOcclusion)
             .lang("Scorched Mechanical Furnace")
             .transform(BlockStressDefaults.setImpact(64))
+            .blockstate(BlockStateGen.horizontalBlockProvider(false))
             .simpleItem()
             .register();
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "econstruct:block/scorched_mechanical_furnace"
-  }
-}

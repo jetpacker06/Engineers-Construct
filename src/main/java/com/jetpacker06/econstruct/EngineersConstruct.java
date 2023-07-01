@@ -1,5 +1,6 @@
 package com.jetpacker06.econstruct;
 
+import com.jetpacker06.econstruct.content.modifier.EConstructModifiers;
 import com.jetpacker06.econstruct.registrate.AllBlocks;
 import com.jetpacker06.econstruct.registrate.AllFluids;
 import com.jetpacker06.econstruct.registrate.AllItems;
@@ -32,11 +33,8 @@ public class EngineersConstruct {
         AllItems.registerItems(REGISTRATE);
         AllFluids.registerFluids(REGISTRATE);
         AllBlocks.registerBasicBlocks(REGISTRATE);
+        EConstructModifiers.register(eventBus);
         AllTileEntities.register();
-        eventBus.addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(this);
-    }
-    public void clientSetup(FMLClientSetupEvent event) {
-        return;//   ItemBlockRenderTypes.setRenderLayer(AllBlocks.MECHANICAL_FURNACE.get(), RenderType.cutout());
     }
 }

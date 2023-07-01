@@ -1,6 +1,7 @@
 package com.jetpacker06.econstruct.datagen;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
+import com.jetpacker06.econstruct.content.modifier.EConstructModifiers;
 import com.jetpacker06.econstruct.registrate.AllFluids;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.FluidEntry;
@@ -13,10 +14,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import org.jetbrains.annotations.NotNull;
+import slimeknights.tconstruct.library.modifiers.Modifier;
 
 import static com.jetpacker06.econstruct.registrate.AllBlocks.*;
 import static com.jetpacker06.econstruct.registrate.AllFluids.*;
-import static com.jetpacker06.econstruct.registrate.AllItems.ANDESITE_ALLOY_NUGGET;
+import static com.jetpacker06.econstruct.registrate.AllItems.*;
 
 public class EConstructLang extends LanguageProvider {
     public EConstructLang(DataGenerator gen, String modid, String locale) {
@@ -45,6 +47,8 @@ public class EConstructLang extends LanguageProvider {
         this.add(MOLTEN_ROSE_QUARTZ, "Molten Rose Quartz");
         this.add(FUEL1, "Powered by Mechanical Furnace");
         this.add(FUEL2, "Powered by Mechanical Furnace");
+
+        this.add("modifier.econstruct.creative", "Creative");
     }
 
     public <T extends Block> void add(@NotNull BlockEntry<T> entry, @NotNull String name) {

@@ -1,7 +1,7 @@
 package com.jetpacker06.econstruct.registrate;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
-import com.jetpacker06.econstruct.content.mechanicalfurnace.MechanicalFurnaceTileEntity;
+import com.jetpacker06.econstruct.content.block.mechanicalfurnace.MechanicalFurnaceTileEntity;
 import com.simibubi.create.content.kinetics.base.ShaftInstance;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;

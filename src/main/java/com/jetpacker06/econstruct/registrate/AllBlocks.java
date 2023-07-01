@@ -1,7 +1,7 @@
 package com.jetpacker06.econstruct.registrate;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
-import com.jetpacker06.econstruct.content.mechanicalfurnace.MechanicalFurnaceBlock;
+import com.jetpacker06.econstruct.content.block.mechanicalfurnace.MechanicalFurnaceBlock;
 import com.jetpacker06.econstruct.content.Tab;
 import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.foundation.data.*;

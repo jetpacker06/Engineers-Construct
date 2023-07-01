@@ -1,4 +1,4 @@
-package com.jetpacker06.econstruct.content.mechanicalfurnace;
+package com.jetpacker06.econstruct.content.block.mechanicalfurnace;
 
 import com.jetpacker06.econstruct.registrate.AllFluids;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;

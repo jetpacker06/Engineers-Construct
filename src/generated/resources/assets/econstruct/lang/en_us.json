@@ -15,5 +15,6 @@
   "item.econstruct.molten_andesite_bucket": "Molten Andesite Bucket",
   "item.econstruct.molten_redstone_bucket": "Molten Redstone Bucket",
   "item.econstruct.molten_rose_quartz_bucket": "Molten Rose Quartz Bucket",
-  "itemGroup.econstruct": "Engineer's Construct"
+  "itemGroup.econstruct": "Engineer's Construct",
+  "modifier.econstruct.creative": "Creative"
 }

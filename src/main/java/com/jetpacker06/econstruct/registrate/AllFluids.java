@@ -20,13 +20,6 @@ public class AllFluids {
 
     public static FluidEntry<ForgeFlowingFluid.Flowing> FUEL1;
     public static FluidEntry<ForgeFlowingFluid.Flowing> FUEL2;
-    public static ItemEntry<BucketItem> FUEL1_BUCKET;
-    public static ItemEntry<BucketItem> FUEL2_BUCKET;
-
-    public static ItemEntry<BucketItem> MOLTEN_ANDESITE_BUCKET;
-    public static ItemEntry<BucketItem> MOLTEN_ANDESITE_ALLOY_BUCKET;
-    public static ItemEntry<BucketItem> MOLTEN_REDSTONE_BUCKET;
-    public static ItemEntry<BucketItem> MOLTEN_ROSE_QUARTZ_BUCKET;
 
     public static void applyDefaultAttributes(FluidAttributes.Builder builder, int color, int temperature) {
         builder.viscosity(5);
@@ -80,37 +73,37 @@ public class AllFluids {
                 .properties(AllFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
 
-        FUEL1_BUCKET = fuel1.bucket()
+        AllItems.FUEL1_BUCKET = fuel1.bucket()
                 .properties(p -> p.stacksTo(1))
                 .lang("Fuel 1 Bucket")
                 .register();
         FUEL1 = fuel1.register();
 
-        FUEL2_BUCKET = fuel2.bucket()
+        AllItems.FUEL2_BUCKET = fuel2.bucket()
                 .properties(p -> p.stacksTo(1))
                 .lang("Fuel 2 Bucket")
                 .register();
         FUEL2 = fuel2.register();
 
-        MOLTEN_ANDESITE_BUCKET = molten_andesite.bucket()
+        AllItems.MOLTEN_ANDESITE_BUCKET = molten_andesite.bucket()
                 .properties(p -> p.stacksTo(1))
                 .lang("Molten Andesite Bucket")
                 .register();
         MOLTEN_ANDESITE = molten_andesite.register();
 
-        MOLTEN_ANDESITE_ALLOY_BUCKET = molten_andesite_alloy.bucket()
+        AllItems.MOLTEN_ANDESITE_ALLOY_BUCKET = molten_andesite_alloy.bucket()
                 .lang("Molten Andesite Alloy Bucket")
                 .properties(p -> p.stacksTo(1))
                 .register();
         MOLTEN_ANDESITE_ALLOY = molten_andesite_alloy.register();
 
-        MOLTEN_REDSTONE_BUCKET = molten_redstone.bucket()
+        AllItems.MOLTEN_REDSTONE_BUCKET = molten_redstone.bucket()
                 .properties(p -> p.stacksTo(1))
                 .lang("Molten Redstone Bucket")
                 .register();
         MOLTEN_REDSTONE = molten_redstone.register();
 
-        MOLTEN_ROSE_QUARTZ_BUCKET = molten_rose_quartz.bucket()
+        AllItems.MOLTEN_ROSE_QUARTZ_BUCKET = molten_rose_quartz.bucket()
                 .properties(p -> p.stacksTo(1))
                 .lang("Molten Rose Quartz Bucket")
                 .register();

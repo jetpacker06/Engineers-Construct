@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "create:crushed_platinum_ore"
+    "item": "create:crushed_raw_platinum"
   },
   "result": {
     "amount": 90,

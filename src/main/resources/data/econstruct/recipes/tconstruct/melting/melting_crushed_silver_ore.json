@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "create:crushed_silver_ore"
+    "item": "create:crushed_raw_silver"
   },
   "result": {
     "amount": 90,

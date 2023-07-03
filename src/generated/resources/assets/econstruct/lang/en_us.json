@@ -16,5 +16,7 @@
   "item.econstruct.molten_redstone_bucket": "Molten Redstone Bucket",
   "item.econstruct.molten_rose_quartz_bucket": "Molten Rose Quartz Bucket",
   "itemGroup.econstruct": "Engineer's Construct",
-  "modifier.econstruct.creative": "Creative"
+  "modifier.econstruct.creative": "Creative",
+  "modifier.econstruct.creative.description": "Allows your tool to act like a Wrench.",
+  "modifier.econstruct.creative.flavor": "Harness your inner wrench"
 }

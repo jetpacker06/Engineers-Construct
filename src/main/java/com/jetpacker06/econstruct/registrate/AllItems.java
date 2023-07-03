@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 public class AllItems {
     public static ItemEntry<Item> ANDESITE_ALLOY_NUGGET;
 
+    // Buckets are registered in AllFluids
     public static ItemEntry<BucketItem> FUEL1_BUCKET;
     public static ItemEntry<BucketItem> FUEL2_BUCKET;
     public static ItemEntry<BucketItem> MOLTEN_ANDESITE_BUCKET;

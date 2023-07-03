@@ -57,7 +57,6 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IB
 
     // from SlimeKnights
     @Override
-    @SuppressWarnings("deprecation")
     public void onRemove(@NotNull BlockState state, @NotNull Level worldIn, @NotNull BlockPos pos, BlockState newState, boolean isMoving) {
         if (!newState.is(this)) {
             BlockEntityHelper.get(MechanicalFurnaceTileEntity.class, worldIn, pos).ifPresent(te -> te.notifyMasterOfChange(pos, newState));

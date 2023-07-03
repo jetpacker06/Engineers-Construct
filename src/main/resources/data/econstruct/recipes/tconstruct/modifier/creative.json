@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "create:wrench"
+    }
+  ],
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/melee_or_harvest"
+    }
+  ],
+  "slots": {
+    "abilities": 1
+  },
+  "result": {
+    "name": "econstruct:creative",
+    "level": 1
+  }
+}

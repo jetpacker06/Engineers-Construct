@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "SBS",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tconstruct:scorched_bricks"
+        },
+        "S": {
+            "item": "create:shaft"
+        },
+        "B": {
+            "item": "create:blaze_burner"
+        }
+    },
+    "result": {
+        "item": "econstruct:scorched_mechanical_furnace",
+        "count": 1
+    }
+}

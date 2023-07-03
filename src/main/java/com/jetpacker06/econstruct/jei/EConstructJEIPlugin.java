@@ -16,6 +16,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 @JeiPlugin
+@SuppressWarnings("unused")
 public class EConstructJEIPlugin implements IModPlugin {
     public static ResourceLocation UID = new ResourceLocation(EngineersConstruct.MOD_ID, "jei_plugin");
     @Override

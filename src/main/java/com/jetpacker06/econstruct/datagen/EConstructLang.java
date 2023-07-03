@@ -48,7 +48,7 @@ public class EConstructLang extends LanguageProvider {
         this.add(FUEL1, "Powered by Mechanical Furnace");
         this.add(FUEL2, "Powered by Mechanical Furnace");
 
-        this.add("modifier.econstruct.creative", "Creative");
+        this.addMaterial("modifier.econstruct.creative", "Creative", "Harness your inner wrench", "Allows your tool to act like a Wrench.");
     }
 
     public <T extends Block> void add(@NotNull BlockEntry<T> entry, @NotNull String name) {
@@ -71,5 +71,11 @@ public class EConstructLang extends LanguageProvider {
         assert fluid.getRegistryName() != null;
         String fluidName = fluid.getRegistryName().toString();
         this.add("fluid." + fluidName.replace(":", ".").replace("flowing_", ""), name);
+    }
+
+    public void addMaterial(String key, String name, String flavor, String description) {
+        this.add(key, name);
+        this.add(key + ".flavor", flavor);
+        this.add(key + ".description", description);
     }
 }

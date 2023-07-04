@@ -1,6 +1,6 @@
 package com.jetpacker06.econstruct.content.block.mechanicalfurnace;
 
-import com.jetpacker06.econstruct.registrate.AllTileEntities;
+import com.jetpacker06.econstruct.registrate.AllECBlockEntities;
 import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
 import com.simibubi.create.foundation.block.IBE;
 import net.minecraft.core.BlockPos;
@@ -34,7 +34,7 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IB
 
     @Override
     public BlockEntityType<? extends MechanicalFurnaceTileEntity> getBlockEntityType() {
-       return AllTileEntities.MECHANICAL_FURNACE.get();
+       return AllECBlockEntities.MECHANICAL_FURNACE.get();
     }
 
     @Override

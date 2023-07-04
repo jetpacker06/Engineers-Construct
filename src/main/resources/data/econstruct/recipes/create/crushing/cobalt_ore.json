@@ -7,10 +7,10 @@
   ],
   "results": [
     {
-      "item": "econstruct:crushed_cobalt_ore"
+      "item": "econstruct:crushed_raw_cobalt"
     },
     {
-      "item": "econstruct:crushed_cobalt_ore",
+      "item": "econstruct:crushed_raw_cobalt",
       "chance": 0.75
     },
     {

@@ -1,8 +1,8 @@
 package com.jetpacker06.econstruct.jei;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
-import com.jetpacker06.econstruct.registrate.AllFluids;
-import com.jetpacker06.econstruct.registrate.AllItems;
+import com.jetpacker06.econstruct.registrate.AllECFluids;
+import com.jetpacker06.econstruct.registrate.AllECItems;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -27,8 +27,8 @@ public class EConstructJEIPlugin implements IModPlugin {
     @Override
     public void registerRecipes(@NotNull IRecipeRegistration reg) {
         reg.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK,
-                List.of(new ItemStack(AllItems.FUEL1_BUCKET.get()), new ItemStack(AllItems.FUEL2_BUCKET.get())));
+                List.of(new ItemStack(AllECItems.FUEL1_BUCKET.get()), new ItemStack(AllECItems.FUEL2_BUCKET.get())));
         reg.getIngredientManager().removeIngredientsAtRuntime(ForgeTypes.FLUID_STACK,
-                List.of(new FluidStack(AllFluids.FUEL1.get().getSource(), 1), new FluidStack(AllFluids.FUEL2.get().getSource(), 1)));
+                List.of(new FluidStack(AllECFluids.FUEL1.get().getSource(), 1), new FluidStack(AllECFluids.FUEL2.get().getSource(), 1)));
     }
 }

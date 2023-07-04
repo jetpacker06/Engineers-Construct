@@ -6,7 +6,7 @@ import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 
-public class AllItems {
+public class AllECItems {
     public static ItemEntry<Item> ANDESITE_ALLOY_NUGGET;
     public static ItemEntry<Item> CRUSHED_RAW_COBALT;
 

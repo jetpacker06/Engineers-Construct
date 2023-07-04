@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "econstruct:chocolate_block"
+    ]
+  },
+  "criteria": {
+    "has_bar_of_chocolate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "create:bar_of_chocolate"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "econstruct:chocolate_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bar_of_chocolate",
+      "has_the_recipe"
+    ]
+  ]
+}

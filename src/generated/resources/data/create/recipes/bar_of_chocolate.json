@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "econstruct:chocolate_block"
+    }
+  ],
+  "result": {
+    "item": "create:bar_of_chocolate",
+    "count": 4
+  }
+}

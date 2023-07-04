@@ -1,19 +1,16 @@
 package com.jetpacker06.econstruct;
 
 import com.jetpacker06.econstruct.content.modifier.EConstructModifiers;
-import com.jetpacker06.econstruct.registrate.AllBlocks;
-import com.jetpacker06.econstruct.registrate.AllFluids;
-import com.jetpacker06.econstruct.registrate.AllItems;
-import com.jetpacker06.econstruct.registrate.AllTileEntities;
+import com.jetpacker06.econstruct.registrate.AllECBlocks;
+import com.jetpacker06.econstruct.registrate.AllECFluids;
+import com.jetpacker06.econstruct.registrate.AllECItems;
+import com.jetpacker06.econstruct.registrate.AllECBlockEntities;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(EngineersConstruct.MOD_ID)
@@ -30,11 +27,11 @@ public class EngineersConstruct {
         Registrate REGISTRATE = Registrate.create(EngineersConstruct.MOD_ID);
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        AllItems.registerItems(REGISTRATE);
-        AllFluids.registerFluids(REGISTRATE);
-        AllBlocks.registerBasicBlocks(REGISTRATE);
+        AllECItems.registerItems(REGISTRATE);
+        AllECFluids.registerFluids(REGISTRATE);
+        AllECBlocks.registerBasicBlocks(REGISTRATE);
         EConstructModifiers.register(eventBus);
-        AllTileEntities.register();
+        AllECBlockEntities.register();
         MinecraftForge.EVENT_BUS.register(this);
     }
 }

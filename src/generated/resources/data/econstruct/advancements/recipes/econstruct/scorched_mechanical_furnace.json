@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "econstruct:scorched_mechanical_furnace"
+    ]
+  },
+  "criteria": {
+    "has_shaft": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "create:shaft"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "econstruct:scorched_mechanical_furnace"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_shaft",
+      "has_the_recipe"
+    ]
+  ]
+}

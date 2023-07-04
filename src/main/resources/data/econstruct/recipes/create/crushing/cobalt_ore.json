@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "tconstruct:cobalt_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "econstruct:crushed_cobalt_ore"
+    },
+    {
+      "item": "econstruct:crushed_cobalt_ore",
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "item": "minecraft:netherrack",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 250
+}

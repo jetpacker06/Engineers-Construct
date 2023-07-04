@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class AllItems {
     public static ItemEntry<Item> ANDESITE_ALLOY_NUGGET;
+    public static ItemEntry<Item> CRUSHED_RAW_COBALT;
 
     // Buckets are registered in AllFluids
     public static ItemEntry<BucketItem> FUEL1_BUCKET;
@@ -21,7 +22,9 @@ public class AllItems {
         REGISTRATE.creativeModeTab(() -> Tab.ENGINEERS_CONSTRUCT);
 
         ANDESITE_ALLOY_NUGGET = REGISTRATE.item("andesite_alloy_nugget", Item::new)
-                .lang("Andesite Alloy Nugget")
+                .register();
+
+        CRUSHED_RAW_COBALT = REGISTRATE.item("crushed_raw_cobalt", Item::new)
                 .register();
     }
 }

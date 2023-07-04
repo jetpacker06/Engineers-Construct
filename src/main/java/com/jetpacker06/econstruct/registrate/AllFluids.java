@@ -39,35 +39,29 @@ public class AllFluids {
         ResourceLocation still = new ResourceLocation("block/water_still");
         ResourceLocation flow = new ResourceLocation("block/water_flow");
         var molten_andesite = REGISTRATE.fluid("molten_andesite", still, flow)
-                .lang("Molten Andesite")
                 .attributes(builder -> applyDefaultAttributes(builder, 0xff7d7a7a))
                 .properties(AllFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var molten_andesite_alloy = REGISTRATE.fluid("molten_andesite_alloy", still, flow)
-                .lang("Molten Andesite Alloy")
                 .attributes(builder -> applyDefaultAttributes(builder, 0xff69818c))
                 .properties(AllFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var molten_redstone = REGISTRATE.fluid("molten_redstone", still, flow)
-                .lang("Molten Redstone")
                 .attributes(builder -> applyDefaultAttributes(builder, 0xff870000))
                 .properties(AllFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var molten_rose_quartz = REGISTRATE.fluid("molten_rose_quartz", still, flow)
-                .lang("Molten Rose Quartz")
                 .attributes(builder -> applyDefaultAttributes(builder, 0xffeb23c6))
                 .properties(AllFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
 
         ResourceLocation fuelRL = new ResourceLocation(EngineersConstruct.MOD_ID, "block/fuel");
         var fuel1 = REGISTRATE.fluid("fuel1", fuelRL, fuelRL)
-                .lang("Mechanical Furnace Fuel: 1000 degrees")
                 .attributes(builder -> applyDefaultAttributes(builder, 0xffffffff))
                 .attributes(builder -> builder.temperature(1000))
                 .properties(AllFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var fuel2 = REGISTRATE.fluid("fuel2", fuelRL, fuelRL)
-                .lang("Mechanical Furnace Fuel: 1500 degrees")
                 .attributes(builder -> applyDefaultAttributes(builder, 0xffffffff))
                 .attributes(builder -> builder.temperature(1500))
                 .properties(AllFluids::applyDefaultProperties)
@@ -75,37 +69,31 @@ public class AllFluids {
 
         AllItems.FUEL1_BUCKET = fuel1.bucket()
                 .properties(p -> p.stacksTo(1))
-                .lang("Fuel 1 Bucket")
                 .register();
         FUEL1 = fuel1.register();
 
         AllItems.FUEL2_BUCKET = fuel2.bucket()
                 .properties(p -> p.stacksTo(1))
-                .lang("Fuel 2 Bucket")
                 .register();
         FUEL2 = fuel2.register();
 
         AllItems.MOLTEN_ANDESITE_BUCKET = molten_andesite.bucket()
                 .properties(p -> p.stacksTo(1))
-                .lang("Molten Andesite Bucket")
                 .register();
         MOLTEN_ANDESITE = molten_andesite.register();
 
         AllItems.MOLTEN_ANDESITE_ALLOY_BUCKET = molten_andesite_alloy.bucket()
-                .lang("Molten Andesite Alloy Bucket")
                 .properties(p -> p.stacksTo(1))
                 .register();
         MOLTEN_ANDESITE_ALLOY = molten_andesite_alloy.register();
 
         AllItems.MOLTEN_REDSTONE_BUCKET = molten_redstone.bucket()
                 .properties(p -> p.stacksTo(1))
-                .lang("Molten Redstone Bucket")
                 .register();
         MOLTEN_REDSTONE = molten_redstone.register();
 
         AllItems.MOLTEN_ROSE_QUARTZ_BUCKET = molten_rose_quartz.bucket()
                 .properties(p -> p.stacksTo(1))
-                .lang("Molten Rose Quartz Bucket")
                 .register();
         MOLTEN_ROSE_QUARTZ = molten_rose_quartz.register();
     }

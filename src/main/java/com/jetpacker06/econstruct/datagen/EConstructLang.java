@@ -34,6 +34,8 @@ public class EConstructLang extends LanguageProvider {
         this.add(SCORCHED_MECHANICAL_FURNACE, "Scorched Mechanical Furnace");
 
         this.add(ANDESITE_ALLOY_NUGGET, "Andesite Alloy Nugget");
+        this.add(CRUSHED_RAW_COBALT, "Crushed Raw Cobalt");
+
         this.add(MOLTEN_ANDESITE_BUCKET, "Molten Andesite Bucket");
         this.add(MOLTEN_ANDESITE_ALLOY_BUCKET, "Molten Andesite Alloy Bucket");
         this.add(MOLTEN_REDSTONE_BUCKET, "Molten Redstone Bucket");

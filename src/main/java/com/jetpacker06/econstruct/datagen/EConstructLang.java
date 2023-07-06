@@ -26,6 +26,8 @@ public class EConstructLang extends LanguageProvider {
         this.add("itemGroup.econstruct", "Engineer's Construct");
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
+        this.add(SHAFT_MOLD, "Shaft Mold");
+
         this.add(SEARED_MECHANICAL_FURNACE, "Seared Mechanical Furnace");
         this.add(SCORCHED_MECHANICAL_FURNACE, "Scorched Mechanical Furnace");
 

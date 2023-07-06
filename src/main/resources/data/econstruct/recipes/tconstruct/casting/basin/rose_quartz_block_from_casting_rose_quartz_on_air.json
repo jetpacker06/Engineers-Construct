@@ -1,0 +1,10 @@
+{
+  "cast_consumed": false,
+  "cooling_time": 80,
+  "fluid": {
+    "amount": 50,
+    "name": "econstruct:molten_rose_quartz"
+  },
+  "result": "create:rose_quartz_block",
+  "type": "tconstruct:casting_basin"
+}

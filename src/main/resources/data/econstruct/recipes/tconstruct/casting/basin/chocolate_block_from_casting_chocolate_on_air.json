@@ -1,0 +1,10 @@
+{
+  "cast_consumed": false,
+  "cooling_time": 100,
+  "fluid": {
+    "amount": 1000,
+    "name": "create:chocolate"
+  },
+  "result": "econstruct:chocolate_block",
+  "type": "tconstruct:casting_basin"
+}

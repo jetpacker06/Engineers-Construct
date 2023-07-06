@@ -1,0 +1,10 @@
+{
+  "cast_consumed": false,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 810,
+    "name": "econstruct:molten_redstone"
+  },
+  "result": "minecraft:redstone_block",
+  "type": "tconstruct:casting_basin"
+}

@@ -11,6 +11,7 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(EngineersConstruct.MOD_ID)
@@ -32,6 +33,12 @@ public class EngineersConstruct {
         AllECBlocks.registerBasicBlocks(REGISTRATE);
         EConstructModifiers.register(eventBus);
         AllECBlockEntities.register();
+        eventBus.addListener(this::clientSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    public void clientSetup(FMLClientSetupEvent event) {
+   //     ItemBlockRenderTypes.setRenderLayer(AllECBlocks.SHAFT_MOLD.get(), RenderType.CUT);
     }
 }

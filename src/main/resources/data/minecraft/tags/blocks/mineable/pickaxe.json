@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "econstruct:seared_mechanical_furnace",
-    "econstruct:scorched_mechanical_furnace"
+    "econstruct:scorched_mechanical_furnace",
+    "econstruct:shaft_mold"
   ]
 }

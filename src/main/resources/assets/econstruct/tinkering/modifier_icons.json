@@ -1,3 +1,4 @@
 {
-  "econstruct:creative": "econstruct:gui/modifiers/creative"
+  "econstruct:creative": "econstruct:gui/modifiers/creative",
+  "econstruct:engineers_vision": "create:item/goggles"
 }

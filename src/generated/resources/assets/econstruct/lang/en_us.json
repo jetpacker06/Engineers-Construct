@@ -19,5 +19,8 @@
   "itemGroup.econstruct": "Engineer's Construct",
   "modifier.econstruct.creative": "Creative",
   "modifier.econstruct.creative.description": "Allows your tool to act like a Wrench.",
-  "modifier.econstruct.creative.flavor": "Harness your inner wrench"
+  "modifier.econstruct.creative.flavor": "Harness your inner wrench",
+  "modifier.econstruct.engineers_vision": "Engineer's Vision",
+  "modifier.econstruct.engineers_vision.description": "Allows your helmet to act like Goggles.",
+  "modifier.econstruct.engineers_vision.flavor": "8)"
 }

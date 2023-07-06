@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "create:goggles"
+    }
+  ],
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/armor/helmets"
+    }
+  ],
+  "slots": {
+    "abilities": 1
+  },
+  "result": {
+    "name": "econstruct:engineers_vision",
+    "level": 1
+  }
+}

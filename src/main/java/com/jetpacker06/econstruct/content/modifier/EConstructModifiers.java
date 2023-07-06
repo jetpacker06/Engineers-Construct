@@ -12,6 +12,10 @@ public class EConstructModifiers {
             "creative",
             CreativeModifier::new
     );
+    public static StaticModifier<EngineersVisionModifier> ENGINEERS_VISION= MODIFIERS.register(
+            "engineers_vision",
+            EngineersVisionModifier::new
+    );
 
     public static void register(IEventBus eventBus) {
         MODIFIERS.register(eventBus);

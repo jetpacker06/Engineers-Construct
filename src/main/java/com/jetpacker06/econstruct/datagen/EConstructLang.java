@@ -46,7 +46,10 @@ public class EConstructLang extends LanguageProvider {
         this.add(FUEL1, "Powered by Mechanical Furnace");
         this.add(FUEL2, "Powered by Mechanical Furnace");
 
-        this.addMaterial("modifier.econstruct.creative", "Creative", "Harness your inner wrench", "Allows your tool to act like a Wrench.");
+        this.addMaterial("modifier.econstruct.creative", "Creative", "Harness your inner wrench",
+                "Allows your tool to act like a Wrench.");
+        this.addMaterial("modifier.econstruct.engineers_vision", "Engineer's Vision", "8)",
+                "Allows your helmet to act like Goggles.");
     }
 
     public <T extends Block> void add(@NotNull BlockEntry<T> entry, @NotNull String name) {

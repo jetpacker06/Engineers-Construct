@@ -1,0 +1,7 @@
+{
+	"parent": "create:block/cogwheel",
+	"textures": {
+		"1_2": "econstruct:block/brass_cogwheel",
+		"particle": "create:block/brass_block"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "create:block/cogwheel",
+	"textures": {
+		"1_2": "econstruct:block/iron_cogwheel",
+		"particle": "block/iron_block"
+	}
+}

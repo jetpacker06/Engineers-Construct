@@ -1,7 +1,11 @@
 {
+  "block.econstruct.brass_cogwheel": "Brass Cogwheel",
   "block.econstruct.chocolate_block": "Chocolate Block",
   "block.econstruct.fuel1": "Powered by Mechanical Furnace",
   "block.econstruct.fuel2": "Powered by Mechanical Furnace",
+  "block.econstruct.iron_cogwheel": "Iron Cogwheel",
+  "block.econstruct.large_brass_cogwheel": "Large Brass Cogwheel",
+  "block.econstruct.large_iron_cogwheel": "Large Iron Cogwheel",
   "block.econstruct.molten_andesite": "Molten Andesite",
   "block.econstruct.molten_andesite_alloy": "Molten Andesite Alloy",
   "block.econstruct.molten_redstone": "Molten Redstone",

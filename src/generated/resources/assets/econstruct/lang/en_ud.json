@@ -1,4 +1,10 @@
 {
+  "block.econstruct.brass_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 ss\u0250\u0279\u15FA",
+  "block.econstruct.chocolate_block": "\u029E\u0254o\u05DF\u15FA \u01DD\u0287\u0250\u05DFo\u0254o\u0265\u0186",
+  "block.econstruct.iron_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 uo\u0279I",
+  "block.econstruct.large_brass_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 ss\u0250\u0279\u15FA \u01DDb\u0279\u0250\uA780",
+  "block.econstruct.large_iron_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 uo\u0279I \u01DDb\u0279\u0250\uA780",
   "block.econstruct.scorched_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0265\u0254\u0279o\u0254S",
-  "block.econstruct.seared_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0279\u0250\u01DDS"
+  "block.econstruct.seared_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0279\u0250\u01DDS",
+  "block.econstruct.shaft_mold": "p\u05DFoW \u0287\u025F\u0250\u0265S"
 }

@@ -27,6 +27,10 @@ public class EConstructLang extends LanguageProvider {
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
         this.add(SHAFT_MOLD, "Shaft Mold");
+        this.add(IRON_COGWHEEL, "Iron Cogwheel");
+        this.add(BRASS_COGWHEEL, "Brass Cogwheel");
+        this.add(LARGE_IRON_COGWHEEL, "Large Iron Cogwheel");
+        this.add(LARGE_BRASS_COGWHEEL, "Large Brass Cogwheel");
 
         this.add(SEARED_MECHANICAL_FURNACE, "Seared Mechanical Furnace");
         this.add(SCORCHED_MECHANICAL_FURNACE, "Scorched Mechanical Furnace");

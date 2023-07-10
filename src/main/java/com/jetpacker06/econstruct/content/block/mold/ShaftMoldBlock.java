@@ -1,4 +1,4 @@
-package com.jetpacker06.econstruct.content.block;
+package com.jetpacker06.econstruct.content.block.mold;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.stream.Stream;
 
-public class ShaftMoldBlock extends Block {
+public class ShaftMoldBlock extends MoldBlock {
     public ShaftMoldBlock(Properties p_49795_) {
         super(p_49795_);
     }

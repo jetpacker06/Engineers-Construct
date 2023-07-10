@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create:cogwheel",
+    "econstruct:iron_cogwheel",
+    "econstruct:brass_cogwheel"
+  ]
+}

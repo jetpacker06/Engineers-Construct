@@ -1,0 +1,13 @@
+{
+  "cast": {
+    "item": "create:shaft"
+  },
+  "cast_consumed": true,
+  "cooling_time": 160,
+  "fluid": {
+    "amount": 720,
+    "name": "tconstruct:molten_gold"
+  },
+  "result": "econstruct:shaft_mold",
+  "type": "tconstruct:casting_basin"
+}

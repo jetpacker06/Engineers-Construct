@@ -1,0 +1,18 @@
+{
+  "ingredients": [
+    {
+      "item": "create:shaft"
+    },
+    {
+      "amount": 180,
+      "fluid": "tconstruct:molten_iron",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "econstruct:large_iron_cogwheel"
+    }
+  ],
+  "type": "create:filling"
+}

@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "econstruct:iron_cogwheel"
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "temperature": 1000,
+  "time": 240,
+  "type": "tconstruct:melting"
+}

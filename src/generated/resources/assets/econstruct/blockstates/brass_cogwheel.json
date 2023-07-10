@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "econstruct:block/brass_cogwheel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "econstruct:block/brass_cogwheel"
+    },
+    "axis=z": {
+      "model": "econstruct:block/brass_cogwheel",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

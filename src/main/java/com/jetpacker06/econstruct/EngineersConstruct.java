@@ -30,9 +30,10 @@ public class EngineersConstruct {
 
         AllECItems.registerItems(REGISTRATE);
         AllECFluids.registerFluids(REGISTRATE);
-        AllECBlocks.registerBasicBlocks(REGISTRATE);
+        AllECBlocks.registerBlocks();
+        AllECBlockEntities.registerBlockEntities();
+
         EConstructModifiers.register(eventBus);
-        AllECBlockEntities.register();
         eventBus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);

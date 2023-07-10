@@ -1,0 +1,13 @@
+{
+  "cast": {
+    "item": "create:shaft"
+  },
+  "cast_consumed": true,
+  "cooling_time": 40,
+  "fluid": {
+    "amount": 90,
+    "name": "tconstruct:molten_iron"
+  },
+  "result": "econstruct:iron_cogwheel",
+  "type": "tconstruct:casting_table"
+}

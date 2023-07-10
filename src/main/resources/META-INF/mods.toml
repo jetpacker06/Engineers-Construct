@@ -6,7 +6,7 @@
 # The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
 modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
-loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[${forge_main_version},)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
 license="MIT"
@@ -36,42 +36,29 @@ authors="jetpacker06" #optional
 description='''
 A compat content mod for Create and Tinker's Construct.
 '''
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+
 [[dependencies.econstruct]]
-modId="create"
-mandatory=true
-versionRange="[0.5.0.e,)"
-ordering="NONE"
-side="BOTH"
-[[dependencies.econstruct]] #optional
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="[40,)" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    modId="forge"
+    mandatory=true
+    versionRange="[${forge_main_version},)"
     ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-# Here's another dependency
 [[dependencies.econstruct]]
     modId="minecraft"
     mandatory=true
-# This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.18.2,1.19)"
+    versionRange="${mc_version_range}"
     ordering="NONE"
     side="BOTH"
 [[dependencies.econstruct]]
     modId="create"
     mandatory=true
-    versionRange="[0.5.1.b,)"
+    versionRange="[${create_version},)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.econstruct]]
     modId="tconstruct"
     mandatory=true
-    versionRange="[3.6.4.113,)"
+    versionRange="[${tinkers_version},)"
     ordering="NONE"
     side="BOTH"

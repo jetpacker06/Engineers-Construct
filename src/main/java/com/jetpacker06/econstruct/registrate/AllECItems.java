@@ -1,6 +1,7 @@
 package com.jetpacker06.econstruct.registrate;
 
 import com.jetpacker06.econstruct.content.Tab;
+import com.jetpacker06.econstruct.jei.EConstructJEIPlugin;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.BucketItem;
@@ -21,10 +22,7 @@ public class AllECItems {
     public static void registerItems(Registrate REGISTRATE) {
         REGISTRATE.creativeModeTab(() -> Tab.ENGINEERS_CONSTRUCT);
 
-        ANDESITE_ALLOY_NUGGET = REGISTRATE.item("andesite_alloy_nugget", Item::new)
-                .register();
-
-        CRUSHED_RAW_COBALT = REGISTRATE.item("crushed_raw_cobalt", Item::new)
-                .register();
+        ANDESITE_ALLOY_NUGGET = REGISTRATE.item("andesite_alloy_nugget", Item::new).register();
+        CRUSHED_RAW_COBALT = REGISTRATE.item("crushed_raw_cobalt", Item::new).register();
     }
 }

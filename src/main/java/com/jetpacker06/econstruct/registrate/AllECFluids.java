@@ -2,6 +2,7 @@ package com.jetpacker06.econstruct.registrate;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
 import com.jetpacker06.econstruct.content.Tab;
+import com.jetpacker06.econstruct.jei.EConstructJEIPlugin;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.FluidEntry;
 import net.minecraft.resources.ResourceLocation;

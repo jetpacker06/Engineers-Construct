@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "econstruct:block/iron_cogwheel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "econstruct:block/iron_cogwheel"
+    },
+    "axis=z": {
+      "model": "econstruct:block/iron_cogwheel",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

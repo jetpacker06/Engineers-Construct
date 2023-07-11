@@ -1,0 +1,7 @@
+{
+	"parent": "create:block/cogwheel",
+	"textures": {
+		"1_2": "econstruct:block/seared_cogwheel",
+		"particle": "tconstruct:block/smeltery/seared/bricks"
+	}
+}

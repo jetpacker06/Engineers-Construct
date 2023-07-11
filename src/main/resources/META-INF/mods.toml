@@ -29,7 +29,7 @@ displayName="Engineer's Construct" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile= "engineersconstruct.png" #optional
 # A text field displayed in the mod UI
-credits="This mod was made by jetpacker06." #optional
+credits="Code and most assets: jetpacker06. Some textures: chickennougat" #optional
 # A text field displayed in the mod UI
 authors="jetpacker06" #optional
 # The description text for the mod (multi line!) (#mandatory)

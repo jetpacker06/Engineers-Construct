@@ -5,8 +5,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class CogwheelBlockEntity extends SimpleKineticBlockEntity {
-    public CogwheelBlockEntity(BlockEntityType<?> typeIn, BlockPos pos, BlockState state) {
+public class MetalCogwheelBlockEntity extends SimpleKineticBlockEntity {
+    public MetalCogwheelBlockEntity(BlockEntityType<?> typeIn, BlockPos pos, BlockState state) {
         super(typeIn, pos, state);
     }
 }

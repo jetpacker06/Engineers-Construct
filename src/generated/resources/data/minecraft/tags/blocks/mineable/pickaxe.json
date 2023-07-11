@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "econstruct:chocolate_block",
+    "econstruct:shaft_mold",
+    "econstruct:seared_mechanical_furnace",
+    "econstruct:scorched_mechanical_furnace",
+    "econstruct:iron_cogwheel",
+    "econstruct:large_iron_cogwheel",
+    "econstruct:brass_cogwheel",
+    "econstruct:large_brass_cogwheel",
+    "econstruct:seared_cogwheel",
+    "econstruct:large_seared_cogwheel",
+    "econstruct:scorched_cogwheel",
+    "econstruct:large_scorched_cogwheel"
+  ]
+}

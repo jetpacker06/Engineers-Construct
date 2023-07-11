@@ -1,0 +1,7 @@
+{
+	"parent": "create:block/cogwheel",
+	"textures": {
+		"1_2": "econstruct:block/scorched_cogwheel",
+		"particle": "tconstruct:block/foundry/scorched/bricks"
+	}
+}

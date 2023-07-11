@@ -27,10 +27,24 @@ public class EConstructLang extends LanguageProvider {
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
         this.add(SHAFT_MOLD, "Shaft Mold");
+
         this.add(IRON_COGWHEEL, "Iron Cogwheel");
-        this.add(BRASS_COGWHEEL, "Brass Cogwheel");
+      //  this.add(ANDESITE_ENCASED_IRON_COGWHEEL, "Andesite Encased Iron Cogwheel");
+      //  this.add(BRASS_ENCASED_IRON_COGWHEEL, "Brass Encased Iron Cogwheel");
         this.add(LARGE_IRON_COGWHEEL, "Large Iron Cogwheel");
+      //  this.add(ANDESITE_ENCASED_LARGE_IRON_COGWHEEL, "Andesite Encased Large Iron Cogwheel");
+      //  this.add(BRASS_ENCASED_LARGE_IRON_COGWHEEL, "Brass Encased Large Iron Cogwheel");
+        this.add(BRASS_COGWHEEL, "Brass Cogwheel");
+     //   this.add(ANDESITE_ENCASED_BRASS_COGWHEEL, "Andesite Encased Brass Cogwheel");
+     //   this.add(BRASS_ENCASED_BRASS_COGWHEEL, "Brass Encased Brass Cogwheel");
         this.add(LARGE_BRASS_COGWHEEL, "Large Brass Cogwheel");
+     //   this.add(ANDESITE_ENCASED_LARGE_BRASS_COGWHEEL, "Andesite Encased Large Brass Cogwheel");
+     //   this.add(BRASS_ENCASED_LARGE_BRASS_COGWHEEL, "Brass Encased Large Brass Cogwheel");
+
+        this.add(SEARED_COGWHEEL, "Seared Cogwheel");
+        this.add(LARGE_SEARED_COGWHEEL, "Large Seared Cogwheel");
+        this.add(SCORCHED_COGWHEEL, "Scorched Cogwheel");
+        this.add(LARGE_SCORCHED_COGWHEEL, "Large Scorched Cogwheel");
 
         this.add(SEARED_MECHANICAL_FURNACE, "Seared Mechanical Furnace");
         this.add(SCORCHED_MECHANICAL_FURNACE, "Scorched Mechanical Furnace");

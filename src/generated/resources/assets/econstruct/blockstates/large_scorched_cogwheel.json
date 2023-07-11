@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "econstruct:block/large_scorched_cogwheel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "econstruct:block/large_scorched_cogwheel"
+    },
+    "axis=z": {
+      "model": "econstruct:block/large_scorched_cogwheel",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

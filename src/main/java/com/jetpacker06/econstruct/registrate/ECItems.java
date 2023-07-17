@@ -1,13 +1,12 @@
 package com.jetpacker06.econstruct.registrate;
 
 import com.jetpacker06.econstruct.content.Tab;
-import com.jetpacker06.econstruct.jei.EConstructJEIPlugin;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 
-public class AllECItems {
+public class ECItems {
     public static ItemEntry<Item> ANDESITE_ALLOY_NUGGET;
     public static ItemEntry<Item> CRUSHED_RAW_COBALT;
 

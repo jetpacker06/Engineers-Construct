@@ -1,6 +1,6 @@
 package com.jetpacker06.econstruct.content.block.cogwheel;
 
-import com.jetpacker06.econstruct.registrate.AllECBlockEntities;
+import com.jetpacker06.econstruct.registrate.ECBlockEntities;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -19,6 +19,6 @@ public class MetalCogwheelBlock extends CogWheelBlock {
 
     @Override
     public BlockEntityType<? extends KineticBlockEntity> getBlockEntityType() {
-        return AllECBlockEntities.METAL_COGWHEEL.get();
+        return ECBlockEntities.METAL_COGWHEEL.get();
     }
 }

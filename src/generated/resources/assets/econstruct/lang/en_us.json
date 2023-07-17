@@ -12,8 +12,10 @@
   "block.econstruct.molten_andesite_alloy": "Molten Andesite Alloy",
   "block.econstruct.molten_redstone": "Molten Redstone",
   "block.econstruct.molten_rose_quartz": "Molten Rose Quartz",
+  "block.econstruct.scorched_casing": "Scorched Casing",
   "block.econstruct.scorched_cogwheel": "Scorched Cogwheel",
   "block.econstruct.scorched_mechanical_furnace": "Scorched Mechanical Furnace",
+  "block.econstruct.seared_casing": "Seared Casing",
   "block.econstruct.seared_cogwheel": "Seared Cogwheel",
   "block.econstruct.seared_mechanical_furnace": "Seared Mechanical Furnace",
   "block.econstruct.shaft_mold": "Shaft Mold",
@@ -29,7 +31,7 @@
   "modifier.econstruct.creative": "Creative",
   "modifier.econstruct.creative.description": "Allows your tool to act like a Wrench.",
   "modifier.econstruct.creative.flavor": "Harness your inner wrench",
-  "modifier.econstruct.engineer's vision": "Engineer's Vision",
-  "modifier.econstruct.engineer's vision.description": "Allows your helmet to act like Goggles.",
-  "modifier.econstruct.engineer's vision.flavor": "8)"
+  "modifier.econstruct.engineers_vision": "Engineer's Vision",
+  "modifier.econstruct.engineers_vision.description": "Allows your helmet to act like Goggles.",
+  "modifier.econstruct.engineers_vision.flavor": "8)"
 }

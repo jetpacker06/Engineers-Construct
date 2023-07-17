@@ -1,7 +1,7 @@
 package com.jetpacker06.econstruct.datagen.recipeproviders;
 
-import com.jetpacker06.econstruct.registrate.AllECBlocks;
-import com.jetpacker06.econstruct.registrate.AllECItems;
+import com.jetpacker06.econstruct.registrate.ECBlocks;
+import com.jetpacker06.econstruct.registrate.ECItems;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -25,31 +25,31 @@ public class EConstructVanillaRecipeProvider extends RecipeProvider implements I
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> c) {
         // CRAFTING
         ShapedRecipeBuilder.shaped(AllItems.ANDESITE_ALLOY.get(), 1)
-                .define('N', AllECItems.ANDESITE_ALLOY_NUGGET.get())
+                .define('N', ECItems.ANDESITE_ALLOY_NUGGET.get())
                 .pattern("NNN")
                 .pattern("NNN")
                 .pattern("NNN")
                 .unlockedBy("has_andesite_alloy", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(AllItems.ANDESITE_ALLOY.get()).build()))
                 .save(c);
-        ShapelessRecipeBuilder.shapeless(AllECItems.ANDESITE_ALLOY_NUGGET.get(), 9)
+        ShapelessRecipeBuilder.shapeless(ECItems.ANDESITE_ALLOY_NUGGET.get(), 9)
                 .requires(AllItems.ANDESITE_ALLOY.get())
                 .unlockedBy("has_andesite_alloy", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(AllItems.ANDESITE_ALLOY.get()).build()))
                 .save(c);
         ShapelessRecipeBuilder.shapeless(AllItems.BAR_OF_CHOCOLATE.get(), 4)
-                .requires(AllECBlocks.CHOCOLATE_BLOCK.get())
+                .requires(ECBlocks.CHOCOLATE_BLOCK.get())
                 .unlockedBy("has_bar_of_chocolate", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(AllItems.BAR_OF_CHOCOLATE.get()).build()))
                 .save(c);
-        ShapedRecipeBuilder.shaped(AllECBlocks.CHOCOLATE_BLOCK.get(), 1)
+        ShapedRecipeBuilder.shaped(ECBlocks.CHOCOLATE_BLOCK.get(), 1)
                 .define('C', AllItems.BAR_OF_CHOCOLATE.get())
                 .pattern("CC")
                 .pattern("CC")
                 .unlockedBy("has_bar_of_chocolate", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(AllItems.BAR_OF_CHOCOLATE.get()).build()))
                 .save(c);
-        ShapedRecipeBuilder.shaped(AllECBlocks.SEARED_MECHANICAL_FURNACE.get(), 1)
+        ShapedRecipeBuilder.shaped(ECBlocks.SEARED_MECHANICAL_FURNACE.get(), 1)
                 .define('#', TinkerSmeltery.searedBricks)
                 .define('S', AllBlocks.SHAFT.get())
                 .define('B', AllBlocks.BLAZE_BURNER.get())
@@ -59,7 +59,7 @@ public class EConstructVanillaRecipeProvider extends RecipeProvider implements I
                 .unlockedBy("has_shaft", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(AllBlocks.SHAFT.get()).build()))
                 .save(c);
-        ShapedRecipeBuilder.shaped(AllECBlocks.SCORCHED_MECHANICAL_FURNACE.get(), 1)
+        ShapedRecipeBuilder.shaped(ECBlocks.SCORCHED_MECHANICAL_FURNACE.get(), 1)
                 .define('#', TinkerSmeltery.scorchedBricks)
                 .define('S', AllBlocks.SHAFT.get())
                 .define('B', AllBlocks.BLAZE_BURNER.get())
@@ -71,7 +71,7 @@ public class EConstructVanillaRecipeProvider extends RecipeProvider implements I
                 .save(c);
 
         // SMELTING
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(AllECItems.CRUSHED_RAW_COBALT.get()), TinkerMaterials.cobalt, 1.0f, 200);
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(AllECItems.CRUSHED_RAW_COBALT.get()), TinkerMaterials.cobalt, 1.0f, 100);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ECItems.CRUSHED_RAW_COBALT.get()), TinkerMaterials.cobalt, 1.0f, 200);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ECItems.CRUSHED_RAW_COBALT.get()), TinkerMaterials.cobalt, 1.0f, 100);
     }
 }

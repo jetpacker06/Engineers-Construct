@@ -2,7 +2,6 @@ package com.jetpacker06.econstruct.registrate;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
 import com.jetpacker06.econstruct.content.Tab;
-import com.jetpacker06.econstruct.jei.EConstructJEIPlugin;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.FluidEntry;
 import net.minecraft.resources.ResourceLocation;
@@ -10,7 +9,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
-public class AllECFluids {
+public class ECFluids {
     public static FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_ANDESITE;
     public static FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_ANDESITE_ALLOY;
     public static FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_REDSTONE;
@@ -38,59 +37,59 @@ public class AllECFluids {
         ResourceLocation flow = new ResourceLocation("block/water_flow");
         var molten_andesite = REGISTRATE.fluid("molten_andesite", still, flow)
                 .attributes(builder -> applyDefaultAttributes(builder, 0xff7d7a7a))
-                .properties(AllECFluids::applyDefaultProperties)
+                .properties(ECFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var molten_andesite_alloy = REGISTRATE.fluid("molten_andesite_alloy", still, flow)
                 .attributes(builder -> applyDefaultAttributes(builder, 0xff69818c))
-                .properties(AllECFluids::applyDefaultProperties)
+                .properties(ECFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var molten_redstone = REGISTRATE.fluid("molten_redstone", still, flow)
                 .attributes(builder -> applyDefaultAttributes(builder, 0xff870000))
-                .properties(AllECFluids::applyDefaultProperties)
+                .properties(ECFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var molten_rose_quartz = REGISTRATE.fluid("molten_rose_quartz", still, flow)
                 .attributes(builder -> applyDefaultAttributes(builder, 0xffeb23c6))
-                .properties(AllECFluids::applyDefaultProperties)
+                .properties(ECFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
 
         ResourceLocation fuelRL = new ResourceLocation(EngineersConstruct.MOD_ID, "block/fuel");
         var fuel1 = REGISTRATE.fluid("fuel1", fuelRL, fuelRL)
                 .attributes(builder -> applyDefaultAttributes(builder, 0xffffffff))
                 .attributes(builder -> builder.temperature(1000))
-                .properties(AllECFluids::applyDefaultProperties)
+                .properties(ECFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
         var fuel2 = REGISTRATE.fluid("fuel2", fuelRL, fuelRL)
                 .attributes(builder -> applyDefaultAttributes(builder, 0xffffffff))
                 .attributes(builder -> builder.temperature(1500))
-                .properties(AllECFluids::applyDefaultProperties)
+                .properties(ECFluids::applyDefaultProperties)
                 .source(ForgeFlowingFluid.Source::new);
 
-        AllECItems.FUEL1_BUCKET = fuel1.bucket()
+        ECItems.FUEL1_BUCKET = fuel1.bucket()
                 .properties(p -> p.stacksTo(1))
                 .register();
         FUEL1 = fuel1.register();
 
-        AllECItems.FUEL2_BUCKET = fuel2.bucket()
+        ECItems.FUEL2_BUCKET = fuel2.bucket()
                 .properties(p -> p.stacksTo(1))
                 .register();
         FUEL2 = fuel2.register();
 
-        AllECItems.MOLTEN_ANDESITE_BUCKET = molten_andesite.bucket()
+        ECItems.MOLTEN_ANDESITE_BUCKET = molten_andesite.bucket()
                 .properties(p -> p.stacksTo(1))
                 .register();
         MOLTEN_ANDESITE = molten_andesite.register();
 
-        AllECItems.MOLTEN_ANDESITE_ALLOY_BUCKET = molten_andesite_alloy.bucket()
+        ECItems.MOLTEN_ANDESITE_ALLOY_BUCKET = molten_andesite_alloy.bucket()
                 .properties(p -> p.stacksTo(1))
                 .register();
         MOLTEN_ANDESITE_ALLOY = molten_andesite_alloy.register();
 
-        AllECItems.MOLTEN_REDSTONE_BUCKET = molten_redstone.bucket()
+        ECItems.MOLTEN_REDSTONE_BUCKET = molten_redstone.bucket()
                 .properties(p -> p.stacksTo(1))
                 .register();
         MOLTEN_REDSTONE = molten_redstone.register();
 
-        AllECItems.MOLTEN_ROSE_QUARTZ_BUCKET = molten_rose_quartz.bucket()
+        ECItems.MOLTEN_ROSE_QUARTZ_BUCKET = molten_rose_quartz.bucket()
                 .properties(p -> p.stacksTo(1))
                 .register();
         MOLTEN_ROSE_QUARTZ = molten_rose_quartz.register();

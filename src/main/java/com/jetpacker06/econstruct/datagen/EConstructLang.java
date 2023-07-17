@@ -12,9 +12,9 @@ import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import org.jetbrains.annotations.NotNull;
 
-import static com.jetpacker06.econstruct.registrate.AllECBlocks.*;
-import static com.jetpacker06.econstruct.registrate.AllECFluids.*;
-import static com.jetpacker06.econstruct.registrate.AllECItems.*;
+import static com.jetpacker06.econstruct.registrate.ECBlocks.*;
+import static com.jetpacker06.econstruct.registrate.ECFluids.*;
+import static com.jetpacker06.econstruct.registrate.ECItems.*;
 
 public class EConstructLang extends LanguageProvider {
     public EConstructLang(DataGenerator gen, String modid, String locale) {
@@ -27,20 +27,13 @@ public class EConstructLang extends LanguageProvider {
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
         this.add(SHAFT_MOLD, "Shaft Mold");
+        this.add(SEARED_CASING, "Seared Casing");
+        this.add(SCORCHED_CASING, "Scorched Casing");
 
         this.add(IRON_COGWHEEL, "Iron Cogwheel");
-      //  this.add(ANDESITE_ENCASED_IRON_COGWHEEL, "Andesite Encased Iron Cogwheel");
-      //  this.add(BRASS_ENCASED_IRON_COGWHEEL, "Brass Encased Iron Cogwheel");
         this.add(LARGE_IRON_COGWHEEL, "Large Iron Cogwheel");
-      //  this.add(ANDESITE_ENCASED_LARGE_IRON_COGWHEEL, "Andesite Encased Large Iron Cogwheel");
-      //  this.add(BRASS_ENCASED_LARGE_IRON_COGWHEEL, "Brass Encased Large Iron Cogwheel");
         this.add(BRASS_COGWHEEL, "Brass Cogwheel");
-     //   this.add(ANDESITE_ENCASED_BRASS_COGWHEEL, "Andesite Encased Brass Cogwheel");
-     //   this.add(BRASS_ENCASED_BRASS_COGWHEEL, "Brass Encased Brass Cogwheel");
         this.add(LARGE_BRASS_COGWHEEL, "Large Brass Cogwheel");
-     //   this.add(ANDESITE_ENCASED_LARGE_BRASS_COGWHEEL, "Andesite Encased Large Brass Cogwheel");
-     //   this.add(BRASS_ENCASED_LARGE_BRASS_COGWHEEL, "Brass Encased Large Brass Cogwheel");
-
         this.add(SEARED_COGWHEEL, "Seared Cogwheel");
         this.add(LARGE_SEARED_COGWHEEL, "Large Seared Cogwheel");
         this.add(SCORCHED_COGWHEEL, "Scorched Cogwheel");

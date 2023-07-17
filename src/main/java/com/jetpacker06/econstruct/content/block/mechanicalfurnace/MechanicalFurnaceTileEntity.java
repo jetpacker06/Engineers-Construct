@@ -1,6 +1,6 @@
 package com.jetpacker06.econstruct.content.block.mechanicalfurnace;
 
-import com.jetpacker06.econstruct.registrate.AllECFluids;
+import com.jetpacker06.econstruct.registrate.ECFluids;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -67,9 +67,9 @@ public class MechanicalFurnaceTileEntity extends KineticBlockEntity implements I
         int speed = Math.abs(Math.round(this.getSpeed()));
         FluidStack fluid = FluidStack.EMPTY;
         if (speed >= 128) {
-            fluid = new FluidStack(AllECFluids.FUEL2.get().getSource(), 1000);
+            fluid = new FluidStack(ECFluids.FUEL2.get().getSource(), 1000);
         } else if (speed >= 64) {
-            fluid = new FluidStack(AllECFluids.FUEL1.get().getSource(), 1000);
+            fluid = new FluidStack(ECFluids.FUEL1.get().getSource(), 1000);
         }
 
         this.tank.setFluid(fluid);
@@ -168,8 +168,8 @@ public class MechanicalFurnaceTileEntity extends KineticBlockEntity implements I
 
     @Override
     public boolean isFluidValid(int tank, @NotNull FluidStack stack) {
-        return stack.getFluid().isSame(AllECFluids.FUEL1.get())
-                || stack.getFluid().isSame(AllECFluids.FUEL2.get());
+        return stack.getFluid().isSame(ECFluids.FUEL1.get())
+                || stack.getFluid().isSame(ECFluids.FUEL2.get());
     }
 
     @Override

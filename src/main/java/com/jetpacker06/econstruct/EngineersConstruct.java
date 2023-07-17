@@ -1,10 +1,10 @@
 package com.jetpacker06.econstruct;
 
 import com.jetpacker06.econstruct.content.modifier.EConstructModifiers;
-import com.jetpacker06.econstruct.registrate.AllECBlocks;
-import com.jetpacker06.econstruct.registrate.AllECFluids;
-import com.jetpacker06.econstruct.registrate.AllECItems;
-import com.jetpacker06.econstruct.registrate.AllECBlockEntities;
+import com.jetpacker06.econstruct.registrate.ECBlocks;
+import com.jetpacker06.econstruct.registrate.ECFluids;
+import com.jetpacker06.econstruct.registrate.ECItems;
+import com.jetpacker06.econstruct.registrate.ECBlockEntities;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
@@ -28,10 +28,10 @@ public class EngineersConstruct {
         Registrate REGISTRATE = Registrate.create(EngineersConstruct.MOD_ID);
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        AllECItems.registerItems(REGISTRATE);
-        AllECFluids.registerFluids(REGISTRATE);
-        AllECBlocks.registerBlocks();
-        AllECBlockEntities.registerBlockEntities();
+        ECItems.registerItems(REGISTRATE);
+        ECFluids.registerFluids(REGISTRATE);
+        ECBlocks.registerBlocks();
+        ECBlockEntities.registerBlockEntities();
 
         EConstructModifiers.register(eventBus);
         eventBus.addListener(this::clientSetup);

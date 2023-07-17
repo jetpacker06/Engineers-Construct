@@ -6,8 +6,10 @@
   "block.econstruct.large_iron_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 uo\u0279I \u01DDb\u0279\u0250\uA780",
   "block.econstruct.large_scorched_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 p\u01DD\u0265\u0254\u0279o\u0254S \u01DDb\u0279\u0250\uA780",
   "block.econstruct.large_seared_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 p\u01DD\u0279\u0250\u01DDS \u01DDb\u0279\u0250\uA780",
+  "block.econstruct.scorched_casing": "bu\u0131s\u0250\u0186 p\u01DD\u0265\u0254\u0279o\u0254S",
   "block.econstruct.scorched_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 p\u01DD\u0265\u0254\u0279o\u0254S",
   "block.econstruct.scorched_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0265\u0254\u0279o\u0254S",
+  "block.econstruct.seared_casing": "bu\u0131s\u0250\u0186 p\u01DD\u0279\u0250\u01DDS",
   "block.econstruct.seared_cogwheel": "\u05DF\u01DD\u01DD\u0265\u028Dbo\u0186 p\u01DD\u0279\u0250\u01DDS",
   "block.econstruct.seared_mechanical_furnace": "\u01DD\u0254\u0250u\u0279n\u2132 \u05DF\u0250\u0254\u0131u\u0250\u0265\u0254\u01DDW p\u01DD\u0279\u0250\u01DDS",
   "block.econstruct.shaft_mold": "p\u05DFoW \u0287\u025F\u0250\u0265S"

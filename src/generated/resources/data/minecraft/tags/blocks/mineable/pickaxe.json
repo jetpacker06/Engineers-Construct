@@ -3,6 +3,8 @@
   "values": [
     "econstruct:chocolate_block",
     "econstruct:shaft_mold",
+    "econstruct:seared_casing",
+    "econstruct:scorched_casing",
     "econstruct:seared_mechanical_furnace",
     "econstruct:scorched_mechanical_furnace",
     "econstruct:iron_cogwheel",

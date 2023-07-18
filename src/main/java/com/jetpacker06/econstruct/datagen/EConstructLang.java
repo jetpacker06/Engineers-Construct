@@ -1,5 +1,6 @@
 package com.jetpacker06.econstruct.datagen;
 
+import com.jetpacker06.econstruct.EngineersConstruct;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.FluidEntry;
 import com.tterrag.registrate.util.entry.ItemEntry;
@@ -23,7 +24,7 @@ public class EConstructLang extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        this.add("itemGroup.econstruct", "Engineer's Construct");
+        this.add("itemGroup.econstruct", EngineersConstruct.NAME);
 
         this.add(CHOCOLATE_BLOCK, "Chocolate Block");
         this.add(SHAFT_MOLD, "Shaft Mold");

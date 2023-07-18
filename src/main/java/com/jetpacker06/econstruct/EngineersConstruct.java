@@ -16,7 +16,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(EngineersConstruct.MOD_ID)
 public class EngineersConstruct {
+
     public static final String MOD_ID = "econstruct";
+    public static final String NAME = "Engineer's Construct";
+
     private static final NonNullSupplier<CreateRegistrate> createRegistrate = NonNullSupplier
             .lazy(() -> CreateRegistrate.create(MOD_ID).registerEventListeners(FMLJavaModLoadingContext.get()
                     .getModEventBus()));

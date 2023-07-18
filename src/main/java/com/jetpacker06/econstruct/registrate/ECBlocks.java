@@ -17,8 +17,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-
 public class ECBlocks {
 
     private static final CreateRegistrate REGISTRATE = EngineersConstruct.registrate().creativeModeTab(() -> Tab.ENGINEERS_CONSTRUCT);
@@ -50,7 +48,7 @@ public class ECBlocks {
                 .initialProperties(() -> Blocks.GOLD_BLOCK)
                 .properties(p -> p.requiresCorrectToolForDrops().noOcclusion())
                 .blockstate((context, provider) -> provider.simpleBlock(context.getEntry(), AssetLookup.standardModel(context, provider)))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .simpleItem()
                 .register();
         SEARED_CASING = REGISTRATE.block("seared_casing", CasingBlock::new)
@@ -67,7 +65,7 @@ public class ECBlocks {
                 .properties(p -> p.requiresCorrectToolForDrops().noOcclusion())
                 .transform(BlockStressDefaults.setImpact(64))
                 .blockstate(BlockStateGen.horizontalBlockProvider(false))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .simpleItem()
                 .register();
         SCORCHED_MECHANICAL_FURNACE = REGISTRATE.block("scorched_mechanical_furnace", MechanicalFurnaceBlock::new)
@@ -75,7 +73,7 @@ public class ECBlocks {
                 .properties(p -> p.requiresCorrectToolForDrops().noOcclusion())
                 .transform(BlockStressDefaults.setImpact(64))
                 .blockstate(BlockStateGen.horizontalBlockProvider(false))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .simpleItem()
                 .register();
 
@@ -84,7 +82,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
         LARGE_IRON_COGWHEEL = REGISTRATE.block("large_iron_cogwheel", MetalCogwheelBlock::large)
@@ -92,7 +90,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
 
@@ -101,7 +99,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
         LARGE_BRASS_COGWHEEL = REGISTRATE.block("large_brass_cogwheel", MetalCogwheelBlock::large)
@@ -109,7 +107,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
 
@@ -118,7 +116,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
         LARGE_SEARED_COGWHEEL = REGISTRATE.block("large_seared_cogwheel", MetalCogwheelBlock::large)
@@ -126,7 +124,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
 
@@ -135,7 +133,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
         LARGE_SCORCHED_COGWHEEL = REGISTRATE.block("large_scorched_cogwheel", MetalCogwheelBlock::large)
@@ -143,7 +141,7 @@ public class ECBlocks {
                 .transform(BlockStressDefaults.setNoImpact())
                 .blockstate(BlockStateGen.axisBlockProvider(false))
                 .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-                .transform(pickaxeOnly())
+                .transform(TagGen.pickaxeOnly())
                 .item(CogwheelBlockItem::new).build()
                 .register();
     }

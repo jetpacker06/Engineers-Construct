@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "ABA",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "tconstruct:scorched_brick"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "B": {
+      "item": "tconstruct:scorched_bricks"
+    }
+  },
+  "result": {
+    "item": "econstruct:scorched_casing",
+    "count": 8
+  }
+}

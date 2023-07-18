@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "ABA",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "tconstruct:seared_brick"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "B": {
+      "item": "tconstruct:seared_bricks"
+    }
+  },
+  "result": {
+    "item": "econstruct:seared_casing",
+    "count": 8
+  }
+}

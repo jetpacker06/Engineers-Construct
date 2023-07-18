@@ -70,6 +70,28 @@ public class EConstructVanillaRecipeProvider extends RecipeProvider implements I
                         .of(AllBlocks.SHAFT.get()).build()))
                 .save(c);
 
+        ShapedRecipeBuilder.shaped(ECBlocks.SEARED_CASING.get(), 8)
+                .define('I', TinkerSmeltery.searedBrick)
+                .define('A', AllItems.ANDESITE_ALLOY.get())
+                .define('B', TinkerSmeltery.searedBricks)
+                .pattern("III")
+                .pattern("ABA")
+                .pattern("III")
+                .unlockedBy("has_seared_bricks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(AllBlocks.SHAFT.get()).build()))
+                .save(c);
+
+        ShapedRecipeBuilder.shaped(ECBlocks.SCORCHED_CASING.get(), 8)
+                .define('I', TinkerSmeltery.scorchedBrick)
+                .define('A', AllItems.ANDESITE_ALLOY.get())
+                .define('B', TinkerSmeltery.scorchedBricks)
+                .pattern("III")
+                .pattern("ABA")
+                .pattern("III")
+                .unlockedBy("has_scorched_bricks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(AllBlocks.SHAFT.get()).build()))
+                .save(c);
+
         // SMELTING
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ECItems.CRUSHED_RAW_COBALT.get()), TinkerMaterials.cobalt, 1.0f, 200);
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(ECItems.CRUSHED_RAW_COBALT.get()), TinkerMaterials.cobalt, 1.0f, 100);

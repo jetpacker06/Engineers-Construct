@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "econstruct:scorched_casing"
+    ]
+  },
+  "criteria": {
+    "has_scorched_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "create:shaft"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "econstruct:scorched_casing"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_scorched_bricks",
+      "has_the_recipe"
+    ]
+  ]
+}

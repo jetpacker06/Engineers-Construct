@@ -1,0 +1,18 @@
+{
+  "ingredients": [
+    {
+      "item": "create:shaft"
+    },
+    {
+      "amount": 500,
+      "fluid": "tconstruct:scorched_stone",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "econstruct:large_scorched_cogwheel"
+    }
+  ],
+  "type": "create:filling"
+}

@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_seared_bricks": {
+    "has_andesite_alloy": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "create:shaft"
+              "create:andesite_alloy"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_seared_bricks",
+      "has_andesite_alloy",
       "has_the_recipe"
     ]
   ]

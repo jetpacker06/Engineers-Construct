@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "econstruct:scorched_casing"
+      "econstruct:scorched_cogwheel"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "econstruct:scorched_casing"
+        "recipe": "econstruct:scorched_cogwheel"
       }
     }
   },

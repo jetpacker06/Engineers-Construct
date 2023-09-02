@@ -1,6 +1,7 @@
 package com.jetpacker06.econstruct.jei;
 
 import com.jetpacker06.econstruct.EngineersConstruct;
+import com.jetpacker06.econstruct.registrate.ECBlocks;
 import com.jetpacker06.econstruct.registrate.ECFluids;
 import com.jetpacker06.econstruct.registrate.ECItems;
 import mezz.jei.api.IModPlugin;
@@ -8,6 +9,7 @@ import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
@@ -19,7 +21,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public class EConstructJEIPlugin implements IModPlugin {
 
-    public static ResourceLocation UID = new ResourceLocation(EngineersConstruct.MOD_ID, "jei_plugin");
+    public static ResourceLocation UID = new ResourceLocation(EngineersConstruct.MODID, "jei_plugin");
 
     @Override
     public @NotNull ResourceLocation getPluginUid() {
@@ -33,9 +35,14 @@ public class EConstructJEIPlugin implements IModPlugin {
                 new ItemStack(ECItems.FUEL2_BUCKET.get())
         ));
 
-        reg.getIngredientManager().removeIngredientsAtRuntime(ForgeTypes.FLUID_STACK, List.of(
-                new FluidStack(ECFluids.FUEL1.get().getSource(), 1),
-                new FluidStack(ECFluids.FUEL2.get().getSource(), 1)
-        ));
+     //   reg.getIngredientManager().removeIngredientsAtRuntime(ForgeTypes.FLUID_STACK, List.of(
+     //           new FluidStack(ECFluids.FUEL1.get().getSource(), 1),
+     //           new FluidStack(ECFluids.FUEL2.get().getSource(), 1)
+     //   ));
+
+        reg.addIngredientInfo(new ItemStack(ECBlocks.SEARED_MECHANICAL_FURNACE.get()), VanillaTypes.ITEM_STACK,
+                new TranslatableComponent("info." + EngineersConstruct.MODID + ".mechanical_furnace"));
+        reg.addIngredientInfo(new ItemStack(ECBlocks.SCORCHED_MECHANICAL_FURNACE.get()), VanillaTypes.ITEM_STACK,
+                new TranslatableComponent("info." + EngineersConstruct.MODID + ".mechanical_furnace"));
     }
 }

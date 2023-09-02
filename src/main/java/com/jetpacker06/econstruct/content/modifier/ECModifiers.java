@@ -5,8 +5,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
 
-public class EConstructModifiers {
-    private static final ModifierDeferredRegister MODIFIERS = ModifierDeferredRegister.create(EngineersConstruct.MOD_ID);
+public class ECModifiers {
+    private static final ModifierDeferredRegister MODIFIERS = ModifierDeferredRegister.create(EngineersConstruct.MODID);
 
     public static StaticModifier<CreativeModifier> CREATIVE = MODIFIERS.register(
             "creative",

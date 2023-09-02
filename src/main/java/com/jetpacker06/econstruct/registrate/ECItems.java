@@ -1,12 +1,12 @@
 package com.jetpacker06.econstruct.registrate;
 
-import com.jetpacker06.econstruct.content.Tab;
-import com.tterrag.registrate.Registrate;
+import com.jetpacker06.econstruct.EngineersConstruct;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 
 public class ECItems {
+
     public static ItemEntry<Item> ANDESITE_ALLOY_NUGGET;
     public static ItemEntry<Item> CRUSHED_RAW_COBALT;
 
@@ -18,10 +18,19 @@ public class ECItems {
     public static ItemEntry<BucketItem> MOLTEN_REDSTONE_BUCKET;
     public static ItemEntry<BucketItem> MOLTEN_ROSE_QUARTZ_BUCKET;
 
-    public static void registerItems(Registrate REGISTRATE) {
-        REGISTRATE.creativeModeTab(() -> Tab.ENGINEERS_CONSTRUCT);
+    private static ItemEntry<Item> basic(String langName) {
+        return basic(langName, langName.replace(" ", "_").replace(".", "").toLowerCase());
+    }
 
-        ANDESITE_ALLOY_NUGGET = REGISTRATE.item("andesite_alloy_nugget", Item::new).register();
-        CRUSHED_RAW_COBALT = REGISTRATE.item("crushed_raw_cobalt", Item::new).register();
+    private static ItemEntry<Item> basic(String langName, String registryName) {
+        return EngineersConstruct.REGISTRATE.item(registryName, Item::new)
+                .lang(langName)
+                .register();
+    }
+
+    public static void registerItems() {
+
+        ANDESITE_ALLOY_NUGGET = basic("Andesite Alloy Nugget");
+        CRUSHED_RAW_COBALT = basic("Crushed Raw Cobalt");
     }
 }

@@ -21,11 +21,11 @@ import slimeknights.tconstruct.common.multiblock.IServantLogic;
 
 import javax.annotation.Nonnull;
 
-public class MechanicalFurnaceTileEntity extends KineticBlockEntity implements IServantLogic, IFluidHandler {
+public class MechanicalFurnaceBlockEntity extends KineticBlockEntity implements IServantLogic, IFluidHandler {
 
     private final FluidTank tank = new FluidTank(1000);
 
-    public MechanicalFurnaceTileEntity(BlockEntityType<?> pType, BlockPos pWorldPosition, BlockState pBlockState) {
+    public MechanicalFurnaceBlockEntity(BlockEntityType<?> pType, BlockPos pWorldPosition, BlockState pBlockState) {
         super(pType, pWorldPosition, pBlockState);
         holder = LazyOptional.of(() -> this.tank);
         this.updateFluid();

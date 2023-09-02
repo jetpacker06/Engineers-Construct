@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import slimeknights.mantle.util.BlockEntityHelper;
 
 
-public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IBE<MechanicalFurnaceTileEntity> {
+public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IBE<MechanicalFurnaceBlockEntity> {
     public static final BooleanProperty IN_STRUCTURE = BooleanProperty.create("in_structure");
 
     public MechanicalFurnaceBlock(Properties properties) {
@@ -28,12 +28,12 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IB
     }
 
     @Override
-    public Class<MechanicalFurnaceTileEntity> getBlockEntityClass() {
-        return MechanicalFurnaceTileEntity.class;
+    public Class<MechanicalFurnaceBlockEntity> getBlockEntityClass() {
+        return MechanicalFurnaceBlockEntity.class;
     }
 
     @Override
-    public BlockEntityType<? extends MechanicalFurnaceTileEntity> getBlockEntityType() {
+    public BlockEntityType<? extends MechanicalFurnaceBlockEntity> getBlockEntityType() {
        return ECBlockEntities.MECHANICAL_FURNACE.get();
     }
 
@@ -59,7 +59,7 @@ public class MechanicalFurnaceBlock extends HorizontalKineticBlock implements IB
     @Override
     public void onRemove(@NotNull BlockState state, @NotNull Level worldIn, @NotNull BlockPos pos, BlockState newState, boolean isMoving) {
         if (!newState.is(this)) {
-            BlockEntityHelper.get(MechanicalFurnaceTileEntity.class, worldIn, pos).ifPresent(te -> te.notifyMasterOfChange(pos, newState));
+            BlockEntityHelper.get(MechanicalFurnaceBlockEntity.class, worldIn, pos).ifPresent(te -> te.notifyMasterOfChange(pos, newState));
         }
         super.onRemove(state, worldIn, pos, newState, isMoving);
     }

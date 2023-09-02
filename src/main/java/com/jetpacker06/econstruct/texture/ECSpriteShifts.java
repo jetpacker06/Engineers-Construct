@@ -11,7 +11,7 @@ public class ECSpriteShifts {
     public static CTSpriteShiftEntry SCORCHED_CASING = omni("scorched_casing");
 
     public static CTSpriteShiftEntry omni(String blockTextureName) {
-        return CTSpriteShifter.getCT(AllCTTypes.OMNIDIRECTIONAL, new ResourceLocation(EngineersConstruct.MOD_ID, "block/" + blockTextureName),
-                new ResourceLocation(EngineersConstruct.MOD_ID, "block/" + blockTextureName + "_connected"));
+        return CTSpriteShifter.getCT(AllCTTypes.OMNIDIRECTIONAL, new ResourceLocation(EngineersConstruct.MODID, "block/" + blockTextureName),
+                new ResourceLocation(EngineersConstruct.MODID, "block/" + blockTextureName + "_connected"));
     }
 }

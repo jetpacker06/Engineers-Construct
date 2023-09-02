@@ -1,4 +1,4 @@
-package com.jetpacker06.econstruct.datagen.recipeproviders;
+package com.jetpacker06.econstruct.datagen.recipe;
 
 import com.jetpacker06.econstruct.registrate.ECBlocks;
 import com.jetpacker06.econstruct.registrate.ECItems;
